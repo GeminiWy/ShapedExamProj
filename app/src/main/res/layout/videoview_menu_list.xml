@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/videoviewlist_tag_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/videoviewlist_kownledge_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="知识点"
+            android:textColor="@color/title_green" />
+
+        <TextView
+            android:id="@+id/videoviewlist_directory_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="目录"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/videoviewlist_cursor_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoviewlist_tag_ll" >
+
+        <!--
+             <ImageView
+            android:id="@+id/videoviewlist_cursor_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:scaleType="matrix"
+            android:src="@drawable/line" />
+        -->
+
+        <ImageView
+            android:id="@+id/videoviewlist_cursor_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/title_green"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/videoviewlist_content_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/videoviewlist_cursor_ll" />
+
+</RelativeLayout>

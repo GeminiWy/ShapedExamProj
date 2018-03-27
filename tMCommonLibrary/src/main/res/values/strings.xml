@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">TMCommonLibrary</string>
+    <string name="lastRefresh">更新于：</string>
+    <string name="more">更多…</string>
+    <string name="refresh">下拉可以刷新…</string>
+    <string name="release">释放即可刷新…</string>
+    <string name="loading">努力加载中…</string>
+    <string name="fileDeletedTip">文件已被删除</string>
+    <string name="retry">重试</string>
+    <string name="back">返回</string>
+    <string name="download_failed">下载失败。</string>
+	<string name="download">下载</string>
+    <string name="failed">失败</string>
+    <string name="success">成功</string>
+
+    <!--崩溃对话框 -->
+    <string name="crash_dialog_title">很抱歉,程序出现异常</string>
+    <string name="crash_dialog_exit_text">退出</string>
+    <string name="crash_dialog_restart_text">重新启动</string>
+
+    <string name="action_choose_camera">请选择相机</string>
+    <string name="open_camera_no_sdcard_hit">未检查到SD卡，拍照功能暂时不可用！</string>
+
+</resources>

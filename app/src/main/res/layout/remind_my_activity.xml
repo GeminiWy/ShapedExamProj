@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/remind_my_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_head_layout_1" />
+
+	<!-- 考试     -->
+    <RelativeLayout
+        android:id="@+id/remind_my_body_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110px"
+        android:layout_below="@+id/remind_my_head"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/msg_fragment_item_img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/msg_fragment_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_exam_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/msg_fragment_item_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/msg_fragment_item_img_layout"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/msg_fragment_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remind_exam"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <TextView
+                android:id="@+id/msg_fragment_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msg_fragment_item_name"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+
+            <TextView
+                android:id="@+id/msg_fragment_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/msg_fragment_item_name"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+
+            <Button
+                android:id="@+id/msg_fragment_follow_btn"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/common_btn_selector"
+                android:text="@string/follow"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/remind_my_body_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/remind_my_body_rl"
+        android:background="@color/light_dark"/>
+    
+	<!-- 网上教学     -->
+    <RelativeLayout
+        android:id="@+id/remind_online_lession_body_rl"
+        android:layout_below="@+id/remind_my_body_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110px"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/remind_online_lession_item_img_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/remind_online_lession_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_online_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remind_online_lession_item_tv_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/remind_online_lession_item_img_rl"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/remind_online_lession_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remind_online_lession"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <TextView
+                android:id="@+id/remind_online_lession_item_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remind_online_lession_item_tv"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+
+            <TextView
+                android:id="@+id/remind_online_lession_item_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/remind_online_lession_item_content_tv"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/remind_online_lession_body_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/remind_online_lession_body_rl"
+        android:background="@color/light_dark"/>
+    
+	<!-- 选课     -->
+    <RelativeLayout
+        android:id="@+id/remind_select_lession_body_rl"
+        android:layout_below="@+id/remind_online_lession_body_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110px"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/remind_select_lession_item_img_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/remind_select_lession_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_course_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remind_select_lession_item_tv_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/remind_select_lession_item_img_rl"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/remind_select_lession_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remind_select_lession"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <TextView
+                android:id="@+id/remind_select_lession_item_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remind_select_lession_item_tv"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+
+            <TextView
+                android:id="@+id/remind_select_lession_item_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/remind_select_lession_item_content_tv"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/remind_select_lession_body_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/remind_select_lession_body_rl"
+        android:background="@color/light_dark"/>
+    
+	<!-- 免修免考     -->
+    <RelativeLayout
+        android:id="@+id/remind_no_exam_body_rl"
+        android:layout_below="@+id/remind_select_lession_body_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110px"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/remind_no_exam_item_img_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/remind_no_exam_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_free_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remind_no_exam_item_tv_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/remind_no_exam_item_img_rl"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/remind_no_exam_item_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remind_no_exam"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <TextView
+                android:id="@+id/remind_no_exam_item_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remind_no_exam_item_tv"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+
+            <TextView
+                android:id="@+id/remind_no_exam_item_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/remind_no_exam_item_content_tv"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/remind_no_exam_body_line_v"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/remind_no_exam_body_rl"
+        android:background="@color/light_dark"/>
+
+    <!-- 网络指示标 -->
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view"
+        android:visibility="gone" />
+
+</RelativeLayout>

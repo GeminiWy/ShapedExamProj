@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 新的朋友 -->
+
+        <RelativeLayout
+            android:id="@+id/msg_communication_header_newsfind_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_111px"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+             >
+
+            <ImageView
+                android:id="@+id/msg_communication_header_newsfind_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/msg_newfriend_icon" />
+
+            <TextView
+                android:id="@+id/msg_communication_header_newsfind_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/msg_communication_header_newsfind_iv"
+                android:gravity="center_vertical"
+                android:text="@string/msg_news_friend"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <!-- 右侧箭头 -->
+
+            <ImageView
+                android:id="@+id/msg_communication_header_newsfind_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/list_arrowright2" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/msg_communication_header_newsfind_line_v"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@+id/msg_communication_header_newsfind_rl"
+            android:background="@color/light_dark"
+            android:visibility="gone" />
+
+        <!-- 我的好友 -->
+
+        <RelativeLayout
+            android:id="@+id/msg_communication_header_myfind_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_111px"
+            android:visibility="gone"
+            android:layout_below="@+id/msg_communication_header_newsfind_rl"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/msg_communication_header_myfind_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/msg_friend_icon" />
+
+            <TextView
+                android:id="@+id/msg_communication_header_myfind_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/msg_communication_header_myfind_iv"
+                android:gravity="center_vertical"
+                android:text="@string/msg_friend"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <!-- 右侧箭头 -->
+
+            <ImageView
+                android:id="@+id/msg_communication_header_myfind_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/list_arrowright2" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/msg_communication_header_myfind_line_v"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:visibility="gone"
+            android:layout_below="@+id/msg_communication_header_myfind_rl"
+            android:background="@color/light_dark" />
+        
+		<!-- 我的关注 -->
+
+        <RelativeLayout
+            android:id="@+id/msg_communication_header_fav_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_111px"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_below="@+id/msg_communication_header_myfind_rl"
+             >
+
+            <ImageView
+                android:id="@+id/msg_communication_header_fav_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/msg_fav_icon" />
+
+            <TextView
+                android:id="@+id/msg_communication_header_fav_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/msg_communication_header_fav_iv"
+                android:gravity="center_vertical"
+                android:text="@string/msg_my_care"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <!-- 右侧箭头 -->
+
+            <ImageView
+                android:id="@+id/msg_communication_header_fav_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/list_arrowright2" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/msg_communication_header_fav_line_v"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:visibility="gone"
+            android:layout_below="@+id/msg_communication_header_fav_rl"
+            android:background="@color/light_dark" />
+
+        <!-- 我的粉丝 -->
+
+        <RelativeLayout
+            android:id="@+id/msg_communication_header_fans_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_111px"
+            android:layout_below="@+id/msg_communication_header_fav_rl"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/msg_communication_header_fans_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/msg_newfriend_icon" />
+			<Button 
+			    android:id="@+id/msg_communication_header_fans_num"
+			    android:layout_width="22dp"
+			    android:layout_height="22dp"
+			    android:layout_marginRight="3dp"
+			    android:textColor="@color/white"
+			    android:textStyle="bold"
+			    android:textSize="10dp"
+			    android:text=""
+			    android:visibility="gone"
+			    android:layout_alignTop="@+id/msg_communication_header_fans_iv"
+			    android:layout_alignRight="@+id/msg_communication_header_fans_iv"
+			    android:background="@drawable/new_friends_num"/>
+            <TextView
+                android:id="@+id/msg_communication_header_fans_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/msg_communication_header_fans_iv"
+                android:gravity="center_vertical"
+                android:text="@string/msg_my_fans"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <!-- 右侧箭头 -->
+
+            <ImageView
+                android:id="@+id/msg_communication_header_fans_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/list_arrowright2" />
+        </RelativeLayout>
+        
+        <View
+            android:id="@+id/msg_communication_header_fans_line_v"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@+id/msg_communication_header_fans_rl"
+            android:background="@color/light_dark" />
+
+        <!-- 我的群组 -->
+
+        <RelativeLayout
+            android:id="@+id/msg_communication_header_group_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_111px"
+            android:layout_below="@+id/msg_communication_header_fans_rl"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/msg_communication_header_group_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/msg_group_icon" />
+
+            <TextView
+                android:id="@+id/msg_communication_header_group_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/msg_communication_header_group_iv"
+                android:gravity="center_vertical"
+                android:text="@string/msg_group"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <!-- 右侧箭头 -->
+
+            <ImageView
+                android:id="@+id/msg_communication_header_group_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/list_arrowright2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <RelativeLayout
+        android:id="@+id/listen_course_head_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        android:background="@color/title_green" >
+
+        <ImageView
+            android:id="@+id/listen_course_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/null_foreground_button_selector"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:src="@drawable/actionbar_icon_back" />
+
+        <TextView
+            android:id="@+id/listen_course_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:layout_toRightOf="@id/listen_course_left_iv"
+            android:text="听课"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/listen_course_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <!-- <ImageView
+            android:id="@+id/listen_course_line_iv"
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/listen_course_edit_btn"
+            android:background="@color/black" /> -->
+
+<!--         <Button
+            android:id="@+id/listen_course_clean_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/listen_course_edit_btn"
+            android:background="@null"
+            android:text="清空"
+            android:textColor="@color/white"
+            android:textSize="14sp" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/listen_course_tag_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/listen_course_head_rl"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/listen_course_history_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="播放历史"
+            android:textColor="@color/title_green" />
+
+        <TextView
+            android:id="@+id/listen_course_doing_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="在修课程"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listen_course_cursor_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listen_course_tag_ll"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/listen_course_cursor_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@color/title_green" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/listen_course_content_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/listen_course_cursor_ll" />
+
+</RelativeLayout>

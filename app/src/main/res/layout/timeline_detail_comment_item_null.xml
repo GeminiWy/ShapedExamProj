@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/timeline_reply_comment_icon_iv"
+        android:layout_width="@dimen/_134px"
+        android:layout_height="@dimen/_134px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/playground_icon_msg" />
+
+</RelativeLayout>

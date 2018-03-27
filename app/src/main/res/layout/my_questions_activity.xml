@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include 
+        android:id="@+id/myquestion_head"
+        layout="@layout/common_head_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include 
+        android:layout_below="@+id/myquestion_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/refreshable_listview"/>
+    <RelativeLayout 
+        android:id="@+id/myquestionitem_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="false"
+        android:layout_below="@+id/myquestion_head"
+        android:background="@color/common_bg">
+		<RelativeLayout
+	        
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/_60px"
+	        android:layout_above="@+id/myquestion_hint_tv"
+	        android:gravity="center"
+	        android:layout_centerHorizontal="true">
+	
+	        <ImageView
+	            android:id="@+id/myquestion_left_img"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/my_ask1"/>
+	
+	        <TextView
+	            android:id="@+id/myquestion_item_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@id/myquestion_left_img"
+	            android:layout_toLeftOf="@+id/myquestion_right_img"
+	            android:text="你暂时没有提过问题"
+	            android:ellipsize="end"
+	            android:singleLine="true"
+	            android:textSize="20dp"
+	            android:textColor="@color/black" />
+	        
+	    </RelativeLayout>
+	    <TextView
+	        android:id="@+id/myquestion_hint_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/myquestion_center_img"
+	        android:layout_centerHorizontal="true"
+	        android:text="可以进入课程页面或在视频页面发起提问喔！"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	        android:textSize="13dp"
+	        android:textColor="@color/light_black" />
+		<ImageView
+	        android:id="@+id/myquestion_center_img"
+	        android:layout_width="200dp"
+	        android:layout_height="250dp"
+			android:layout_centerInParent="true"
+	        android:src="@drawable/my_ask_icon1"/>
+	</RelativeLayout>
+</RelativeLayout>

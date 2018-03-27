@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 错题重做列表的项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height">
+        <!-- 课程名 -->
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="C语言"
+            android:layout_toLeftOf="@+id/rework_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <!-- 错题数 -->
+        <TextView 
+            android:id="@+id/rework_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff0000"/>
+        <TextView 
+            android:id="@+id/rework_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="累计错题："
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rework_num_tv"
+            android:textColor="#ff0000"/>
+    </RelativeLayout>
+
+</RelativeLayout>

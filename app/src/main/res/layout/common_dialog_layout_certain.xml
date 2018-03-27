@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/common_dialog_layout"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	
+	<RelativeLayout android:id="@+id/common_dialog_top_layout"
+		android:layout_width="match_parent" 
+		android:layout_height="45dip"
+		android:layout_alignParentTop="true"
+		android:visibility="gone"
+		android:background="@color/white">
+		
+		<ImageView android:id="@+id/common_dialog_top_icon"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"		    
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:paddingTop="3dip"
+		    android:paddingLeft="10dip" />
+		
+		<TextView android:id="@+id/common_dialog_top_title"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/common_dialog_top_icon"
+			android:paddingTop="3dip"
+			android:paddingLeft="10dip"
+			android:gravity="center"
+			android:textSize="16sp" 
+			android:textColor="@color/white"
+			android:text="@string/settings_dialog_check_update"
+			 />
+	</RelativeLayout>
+	
+	<RelativeLayout android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/common_dialog_top_layout"
+		android:background="@color/white">
+		 <RelativeLayout 
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:background="@color/white"
+		     android:paddingBottom="15dp"
+		     >
+		    <TextView android:id="@+id/common_dialog_content"
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:paddingTop="25dip"
+				android:paddingBottom="20dip"
+				android:paddingLeft="15dip"
+				android:paddingRight="15dip"
+				android:gravity="center"
+				android:textSize="16sp" 
+				android:textColor="@color/black" 
+				android:text="@string/settings_dialog_update_no_update"
+				android:background="@color/white"/>
+		    
+			<Button
+			    android:id="@+id/positive_button"
+			    android:layout_width="200dp"
+			    android:layout_height="40dp"
+			    android:layout_below="@+id/common_dialog_content"
+			    android:layout_centerHorizontal="true"
+			    android:background="@drawable/white_item_bg"
+			    android:gravity="center"
+			    android:text="@string/sure"
+			    android:textColor="@color/title_green"
+			    android:textSize="16sp" />
+		</RelativeLayout>
+	</RelativeLayout>
+	
+</RelativeLayout>

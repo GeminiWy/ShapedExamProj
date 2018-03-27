@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 答题列表选项 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:id="@+id/do_homework_rl"
+        android:layout_width="match_parent"
+        android:background="@drawable/white_item_bg"
+        android:layout_marginTop="8dp"
+        android:layout_height="@dimen/common_height">
+        <RadioButton 
+            android:id="@+id/do_homework_list_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/radiobutton"
+            
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView 
+            android:id="@+id/do_homework_list_tv"
+            android:layout_toRightOf="@+id/do_homework_list_rb"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成本"/>
+    </RelativeLayout>
+
+</RelativeLayout>

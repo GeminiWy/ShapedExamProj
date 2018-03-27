@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的缴费页，列表项，集合了三种布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_item_bg"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:id="@+id/mypayment_title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/mypayment_item_icon"
+                android:layout_width="20dp"
+                android:layout_height="16dp"
+                android:text="补"
+                android:background="@color/payment_red"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mypayment_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mypayment_time_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mypayment_title_ll"
+            android:layout_marginLeft="10dp" >
+
+            <TextView
+                android:id="@+id/mypayment_time_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/mypayment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/mypayment_time_tv1"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:id="@+id/mypayment_money_ll_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额："
+                    android:textColor="@color/light_black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/mypayment_money_tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/orange"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/light_black"
+                    android:textSize="13dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/mypayment_money_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mypayment_time_ll"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额："
+                android:textColor="@color/light_black"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/mypayment_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/orange"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/light_black"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mypayment_pay_btn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/mypayment_money_ll"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/white_bg_green_border"
+            android:text="在线付款"
+            android:textColor="@color/title_green"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

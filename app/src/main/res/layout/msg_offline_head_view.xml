@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="50dp" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+              android:id="@+id/msg_offline_head_view" android:background="@color/msg_offline_bg_color">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/msg_offline_tip_text"
+            android:id="@+id/msg_offline_tip_tv" android:gravity="center" android:textSize="18dp"
+            android:textColor="@color/chat_time_gray"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_activity_AnimTime">300</integer>
+    <item type="id" name="image_view_page_image_view_id"/>
+</resources>

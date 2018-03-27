@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/common_dialog_layout"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	
+	<RelativeLayout android:id="@+id/common_dialog_top_layout"
+		android:layout_width="match_parent" 
+		android:layout_height="45dip"
+		android:visibility="gone"
+		android:layout_alignParentTop="true"
+		android:background="@color/white">
+		
+		<ImageView android:id="@+id/common_dialog_top_icon"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"		    
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:paddingTop="3dip"
+		    android:paddingLeft="10dip" />
+		
+		<TextView android:id="@+id/common_dialog_top_title"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/common_dialog_top_icon"
+			android:paddingTop="3dip"
+			android:paddingLeft="10dip"
+			android:gravity="center"
+			android:textSize="16sp" 
+			android:textColor="#000000"
+			android:text="@string/settings_dialog_check_update"
+			 />
+	</RelativeLayout>
+	
+	<RelativeLayout android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/common_dialog_top_layout"
+		android:background="@color/white">
+		
+	    <LinearLayout android:id="@+id/common_dialog_content_layout"
+		    android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:gravity="center"
+			android:background="@color/white"
+			android:orientation="vertical">
+
+	        <LinearLayout
+	            android:id="@+id/common_dialog_head_LL"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" 
+	            android:gravity="center_horizontal"
+	            android:orientation="horizontal">
+
+	            <TextView
+	                android:id="@+id/common_dialog_head_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_vertical"
+	                android:layout_gravity="center_horizontal"
+	                android:paddingTop="10dip"
+	                android:paddingBottom="5dp"
+	                android:textSize="18dp"
+	                android:text="@string/settings_dialog_update_version"
+	                android:textColor="@color/black" />
+
+	            <TextView
+	                android:id="@+id/common_dialog_tv_version"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="" 
+	                android:layout_gravity="center_vertical"
+	                android:paddingBottom="5dip"	             	                
+	                android:paddingTop="5dip"
+	                android:textColor="#000000" />
+
+	        </LinearLayout>
+		    <TextView 
+		        android:id="@+id/common_dialog_tv_"
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:paddingLeft="15dip"
+				android:paddingRight="15dip"
+				android:paddingBottom="10dp"
+				android:paddingTop="5dp"
+				android:gravity="top"
+				android:textSize="16dp" 
+				android:text="更新说明："
+				android:textColor="@color/black" />
+		    <TextView android:id="@+id/common_dialog_content"
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:paddingTop="5dp"
+				android:paddingBottom="10dp"
+				android:paddingLeft="15dip"
+				android:paddingRight="15dip"
+				android:gravity="center_vertical"
+				android:textSize="16sp" 
+				android:text=""
+				android:textColor="#757675" />
+		    
+		</LinearLayout>
+		
+		<LinearLayout android:id="@+id/common_dialog_bottom_layout"
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:background="@color/white"
+			android:layout_below="@id/common_dialog_content_layout"
+			android:layout_centerHorizontal="true"
+			android:gravity="center">
+
+	            
+			<Button	android:id="@+id/negative_button"				
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_weight="1"
+				android:textSize="16sp" 
+				android:textColor="@color/title_green"
+				android:background="@drawable/dialog_btn_selector"
+	            android:gravity="center" 
+	            android:layout_marginRight="-1dp"
+	            android:text="@string/settings_dialog_update_cancel"/>
+			
+			<Button	android:id="@+id/positive_button"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"				
+				android:layout_weight="1"
+				android:textSize="16sp" 
+				android:textColor="@color/title_green"
+	            android:layout_marginLeft="-1dp"
+				android:background="@drawable/dialog_btn_selector"
+	            android:gravity="center" 
+	            android:text="@string/settings_dialog_update_certain"
+	            />
+		</LinearLayout>
+		
+	</RelativeLayout>
+	
+</RelativeLayout>

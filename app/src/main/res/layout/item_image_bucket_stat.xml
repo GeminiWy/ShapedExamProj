@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_image_bucket__all_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/item_image_bucket_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/item_image_bucket_img_ll"
+            android:layout_width="@dimen/_110px"
+            android:layout_height="@dimen/_110px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/item_image_bucket_iv"
+                android:layout_width="@dimen/_92px"
+                android:layout_height="@dimen/_92px"
+                android:scaleType="centerCrop"
+                android:src="@null"
+                android:background="@color/common_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_image_bucket_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10px"
+            android:layout_toRightOf="@+id/item_image_bucket_img_ll"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_image_bucket_path_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/item_image_bucket_path_name_color" />
+
+            <TextView
+                android:id="@+id/item_image_bucket_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/item_image_bucket_count_color"
+                android:textSize="@dimen/_21px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_image_bucket_open_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_arrowright2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/item_image_bucket_line_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="0.001dp"
+        android:layout_below="@+id/item_image_bucket_rl"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/item_image_bucket_line_view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.001dp"
+            android:background="@color/item_image_bucket_line_color" />
+    </LinearLayout>
+
+</RelativeLayout>

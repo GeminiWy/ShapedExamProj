@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110px" >
+
+        <RelativeLayout
+            android:id="@+id/msg_group_item_img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <com.tming.openuniversity.view.CircularImage
+                android:id="@+id/msg_group_item_img_photo"
+                android:layout_width="@dimen/_76px"
+                android:layout_height="@dimen/_76px"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <ImageView
+                android:id="@+id/msg_group_img_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/msg_avatar_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/msg_group_item_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/msg_group_item_img_layout"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/msg_group_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <TextView
+                android:id="@+id/msg_group_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msg_group_item_name"
+                android:gravity="left"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

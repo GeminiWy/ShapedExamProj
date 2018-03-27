@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tming.openuniversity.view.ResizeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_room_root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true" >
+
+    <include
+        android:id="@+id/common_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_bottom_rl"
+        android:layout_below="@+id/common_head_layout"
+         >
+
+        <com.tming.common.view.support.pulltorefresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chat_content_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="8dp"
+            android:listSelector="@drawable/chat_msg_list_selector"
+            android:scrollbars="none"
+            android:transcriptMode="alwaysScroll"
+            ptr:ptrMode="pullFromStart"
+           	ptr:ptrAnimationStyle = "flip" />
+    </LinearLayout>
+
+    <include 
+        android:id="@+id/chat_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/chat_bottom_bar"/>
+
+</com.tming.openuniversity.view.ResizeRelativeLayout>

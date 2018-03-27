@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+    
+    <include 
+        android:layout_centerInParent="true"
+        android:id="@+id/my_change_img_sumbit"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading_view"/>
+
+    <RelativeLayout
+        android:id="@+id/mychangeimg_before_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/mychangeimg_head_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_72px"
+            layout="@layout/common_header" />
+
+        <RelativeLayout
+            android:id="@+id/mychangeimg_photo_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mychangeimg_head_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_item_bg"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/mychangeimg_photo_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="从手机相册选择"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/mychangeimg_photo_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/list_arrowright1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mychangeimg_camera_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mychangeimg_photo_rl"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_item_bg"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/mychangeimg_camera_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="拍一张"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/mychangeimg_camera_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/list_arrowright1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mychangeimg_after_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/mychangeimg_image_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:id="@+id/mychangeimg_cancel_btn"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:background="@color/light_black"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/mychangeimg_setting_btn"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@color/title_green"
+            android:text="设置图片"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

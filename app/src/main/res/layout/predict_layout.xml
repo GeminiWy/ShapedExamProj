@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tming.openuniversity.view.PredictLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/predict_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/transparent" >
+    
+
+</com.tming.openuniversity.view.PredictLayout>

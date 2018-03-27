@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+     >
+    <Button 
+        android:id="@+id/last_problem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/last_problem"
+        android:textColor="@color/white"
+        android:background="@color/last_and_next_bg"
+        android:drawableLeft="@drawable/classroom_icon_prev"/>
+    <Button 
+        android:id="@+id/homework_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/progress"
+        android:textColor="@color/white"
+        android:background="@color/test_progress_bg"/>
+	<Button 
+        android:id="@+id/next_problem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/next_problem"
+        android:textColor="@color/white"
+        android:background="@color/last_and_next_bg"
+        android:drawableRight="@drawable/classroom_icon_next"/>
+</LinearLayout>

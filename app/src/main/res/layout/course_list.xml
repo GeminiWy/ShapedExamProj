@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/course_lsit_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_head_layout" />
+
+    <com.tming.common.view.RefreshableListView
+        android:id="@+id/courselist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/course_lsit_actionbar"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent" />
+
+    <TextView
+        android:id="@+id/no_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/light_black"
+        android:textSize="20dp" />
+
+    <include
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/error_view"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view" />
+
+</RelativeLayout>

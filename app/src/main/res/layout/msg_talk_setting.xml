@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <ScrollView
+        android:id="@+id/msg_talk_setting_group_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <GridView
+                    android:id="@+id/msg_talk_setting_photo_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:horizontalSpacing="6dp"
+                    android:listSelector="@null"
+                    android:numColumns="5"
+                    android:verticalSpacing="6dp" >
+                </GridView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_name_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_group"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/msg_talk_setting_group_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/im_talk_setting_top"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_top_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_top"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/msg_talk_setting_top_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/setting_check_select"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/title_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_notifi_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_new_msg"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/msg_talk_setting_notifi_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/setting_check_select"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/title_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_record_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_record"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/msg_talk_setting_record_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/msg_arrow_right_icon"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/title_green" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:gravity="bottom" >
+
+                <Button
+                    android:id="@+id/msg_talk_setting_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_72px"
+                    android:layout_gravity="bottom"
+                    android:background="#f57250"
+                    android:text="@string/im_talk_setting_btn"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 聊天设置(私聊) -->
+
+    <ScrollView
+        android:id="@+id/msg_talk_setting_single_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <GridView
+                    android:id="@+id/msg_talk_setting_photo_single_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:horizontalSpacing="6dp"
+                    android:listSelector="@null"
+                    android:numColumns="5"
+                    android:verticalSpacing="6dp" >
+                </GridView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_top_single_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_top"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/msg_talk_setting_top_single_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/setting_check_select"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/title_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_notifi_single_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_new_msg"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/msg_talk_setting_notifi_single_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/setting_check_select"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/title_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_record_single_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_record"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/msg_talk_setting_record_single_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/msg_arrow_right_icon"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/title_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_personal_single_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_personal"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/msg_talk_setting_personal_single_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/msg_arrow_right_icon"
+                    android:text=""
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/title_green" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_clear_single_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_clear_record"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

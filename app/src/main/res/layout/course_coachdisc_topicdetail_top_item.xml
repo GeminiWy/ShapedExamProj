@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/coachdisc_topic_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/coachdisc_topic_RL" >
+
+        <TextView
+            android:id="@+id/coachdisc_topic_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:layout_toLeftOf="@+id/coachdisc_topic_replynum_tv"
+            android:textColor="@color/black"
+            android:textSize="21dp" />
+
+        <TextView
+            android:id="@+id/coachdisc_topic_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/coachdisc_topic_title_tv"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/coachdisc_topic_replynum_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/classroom_icon_discuss"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/coachdisc_topic_RL"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_item_bg"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/coach_topicdetail_userinfo_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <com.tming.openuniversity.view.CircularImage
+                android:id="@+id/coach_topicdetail_userimage_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/coach_topicdetail_userimage_iv"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/coach_topicdetail_username_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/coach_topicdetail_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/light_black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/coach_topicdetail_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/coach_topicdetail_userinfo_rl"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

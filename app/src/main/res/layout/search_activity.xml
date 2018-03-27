@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg" 
+    android:orientation="vertical" >
+    <LinearLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:gravity="center"             
+        android:background="@color/search_title_bg_green">     
+     	    
+     	  <com.tming.openuniversity.view.search.CustomSearchView
+            android:id="@+id/search_auto_complete_ed"
+            android:layout_weight="1.0" 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" /> 
+	</LinearLayout> 
+ 
+    <!-- 相关用户 -->
+    <TextView 
+        android:id="@+id/search_user_type_introduce_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40px"        
+        android:paddingLeft="@dimen/_18px"
+        android:text="@string/search_result_by_user"
+        android:textSize="@dimen/_16px"
+        android:textColor="@color/black"
+        android:gravity="center|left"
+        android:visibility="gone"/>
+   
+    <LinearLayout
+        android:id="@+id/search_user_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_134px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_18px"
+        android:layout_marginRight="@dimen/_18px"
+        android:background="@drawable/playground_item_border"
+        android:visibility="gone">
+
+        <com.tming.openuniversity.view.search.HorizontalListView
+            android:id="@+id/search_user_content_hlv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_134px"
+            android:layout_weight="1" 
+            android:divider="#00000000"
+            android:dividerHeight="8dp"/>
+         
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+			<ImageView
+                android:id="@+id/user_type_search_result_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_134px"
+                android:clickable="true"
+                android:src="@drawable/list_arrowright2" />
+            
+        </LinearLayout>
+    </LinearLayout>
+   
+    <!-- 相关专业 -->
+    <TextView 
+        android:id="@+id/search_specialty_type_introduce_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40px"        
+        android:paddingLeft="@dimen/_18px"
+        android:text="@string/search_result_by_specialty"
+        android:textSize="@dimen/_16px"
+        android:textColor="@color/black"
+        android:gravity="center|left"
+        android:visibility="gone" />
+   
+    <LinearLayout
+        android:id="@+id/search_specialty_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_64px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_18px"  
+        android:layout_marginRight="@dimen/_18px"
+        android:gravity="center_vertical"
+        android:background="@drawable/playground_item_border"
+        android:visibility="gone">
+        
+        <com.tming.openuniversity.view.search.HorizontalListView
+            android:id="@+id/search_specialty_hlv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_46px"     
+            android:layout_marginRight="8dp"   
+            android:layout_marginLeft="8dp"      
+            android:layout_weight="1" 
+            android:divider="#00000000"
+            android:dividerHeight="8dp"  />
+        
+        <ImageView
+            android:id="@+id/specialty_type_search_result_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_64px" 
+            android:clickable="true"
+            android:src="@drawable/list_arrowright2" />
+	 
+    </LinearLayout>
+             
+    <!-- 相关课程 -->
+    <TextView
+        android:id="@+id/search_course_type_introduce_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40px"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/_18px"        
+        android:text="@string/search_result_by_course"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16px"
+        android:visibility="gone" />
+     
+     <LinearLayout
+        android:id="@+id/search_course_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_111px"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="@dimen/_18px"
+        android:layout_marginRight="@dimen/_18px"
+        android:gravity="center_vertical"
+        android:background="@drawable/playground_item_border"
+        android:visibility="gone">
+
+        <com.tming.openuniversity.view.search.HorizontalListView
+            android:id="@+id/search_course_hlv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_111px"
+            android:layout_weight="1"  
+            android:divider="#00000000"/>
+        
+        <ImageView
+            android:id="@+id/course_type_search_result_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_111px" 
+            android:clickable="true"
+            android:src="@drawable/list_arrowright2" />     
+    </LinearLayout>
+          
+    <TextView
+        android:id="@+id/search_pub_type_introduce_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40px"
+        android:gravity="center|left" 
+        android:paddingLeft="@dimen/_18px"   
+        android:text="@string/search_result_by_pub"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16px" 
+        android:visibility="gone"/>
+
+    <LinearLayout 
+        android:id="@+id/search_pub_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_18px"
+        android:layout_marginRight="@dimen/_18px" 
+        android:visibility="gone" >
+
+        <com.tming.common.view.RefreshableListView   
+            android:id="@+id/search_result_timeline_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/common_bg" 
+            android:divider="#00000000"
+            android:dividerHeight="8dp"
+            android:scrollbars="none" />           
+    </LinearLayout>
+    
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/_72px"
+        layout="@layout/loading_view" />
+	
+	<include
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        layout="@layout/error_view"
+        android:visibility="gone" />
+
+</LinearLayout>

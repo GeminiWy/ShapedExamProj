@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_120px"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_120px"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/white" >
+
+        <com.tming.openuniversity.view.CircularImage
+                android:id="@+id/related_userimage_iv"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_78px"
+                android:layout_height="@dimen/_78px" android:onClick="jumpToUserDetailView"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_toRightOf="@+id/related_userimage_iv"
+                android:layout_toLeftOf="@+id/related_add_btn" android:layout_marginRight="5dp">
+            <TextView
+                    android:id="@+id/related_username_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16px"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/related_userimage_iv"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_27px"
+                    android:gravity="center_vertical|left" android:layout_marginTop="@dimen/_10px"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/related_userinfo_detail_tv" android:layout_marginLeft="@dimen/_16px"
+                    android:gravity="left" android:textSize="14dp"
+                    android:textColor="@color/chat_time_gray"/>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/related_add_btn"
+                android:layout_width="70dp"
+                android:layout_height="32dp"
+                android:background="@drawable/null_foreground_button_pressed"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:text="添加"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white" android:layout_marginRight="10dp" android:onClick="sendAddRelatedRequest"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

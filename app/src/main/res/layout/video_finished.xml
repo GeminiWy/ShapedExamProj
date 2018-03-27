@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediacontroller_bg" >
+
+    <RelativeLayout
+        android:id="@+id/video_finished_top_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#0d0c0c" >
+
+            <Button
+                android:id="@+id/video_finished_back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/actionbar_icon_back" />
+
+            <TextView
+                android:id="@+id/video_finished_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/video_finished_back_btn"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+            
+            
+             <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/video_finished_replay_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/classroom_icon_kj_replay" />
+            
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/video_finished_right_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/video_finished_top_rl"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/video_finished_continue_play_iv"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/classroom_icon_circle1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="继续听课"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_finished_courseware_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:layout_below="@id/video_finished_top_rl"
+        android:layout_toLeftOf="@id/video_finished_right_ll" >
+
+    </RelativeLayout>
+
+</RelativeLayout>

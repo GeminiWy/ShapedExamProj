@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:id="@+id/course_answer_head_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+        <ImageView 
+            android:id="@+id/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_1010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="已回答"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/icon_right"/>
+        
+        <Button
+            android:id="@+id/course_answer_question_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/common_btn_selector"
+            android:text="发起提问"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+        
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/course_answer_head_rl"
+        android:background="@color/border_color"/>
+	<ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/timeline_arrow"
+        android:layout_marginLeft="50dp"
+        android:layout_alignBottom="@+id/course_answer_head_rl"/>
+	<TextView 
+	    android:id="@+id/course_answer_head_tv"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/_72px"
+	    android:background="@color/white"
+	    android:gravity="center"
+	    android:layout_below="@+id/course_answer_head_rl"
+	    android:textColor="@color/light_black"
+	    android:textSize="15dp"
+	    android:visibility="gone"
+	    android:text="@string/no_questions"/>
+</RelativeLayout>

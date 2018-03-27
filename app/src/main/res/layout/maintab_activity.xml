@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leftmenu_border">
+	<FrameLayout  
+        android:id="@+id/main_tab_frame"  
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0.5dp"
+        android:layout_above="@+id/main_tab_bottom_lay" android:background="@drawable/leftmenu_border">
+    </FrameLayout>   
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/main_tab_bottom_lay"
+        android:background="@color/h_line_bg"/>
+    <LinearLayout 
+        android:id="@+id/main_tab_bottom_lay"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/_78px"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/bottom_background_color" >
+	    <RelativeLayout
+	        android:id="@+id/main_tab_classroom_lay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:background="@null"
+	        android:clickable="true" >
+	
+	        <ImageView
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_centerHorizontal="true"
+	            android:src="@drawable/navbar_icon_classroom"
+	            android:id="@+id/main_tab_classroom_img" />
+	
+	        <TextView
+	            android:id="@+id/main_tab_classroom_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/main_tab_classroom_img"
+	            android:layout_centerHorizontal="true"
+	            android:gravity="center"
+	            android:text="@string/shap_exam"
+	            android:textColor="@color/bottom_text_color"
+	            android:textSize="14sp" />
+	    </RelativeLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/main_tab_msg_lay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="@null"
+	        android:clickable="true"
+			android:visibility="gone"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:id="@+id/main_tab_msg_img"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:src="@drawable/navbar_icon_message" />
+	
+	        <TextView
+	            android:id="@+id/main_tab_msg_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/message"
+	            android:textColor="@color/bottom_text_color"
+	            android:textSize="14sp" />
+	    </LinearLayout>
+		<!--暂时屏蔽-->
+	    <LinearLayout
+	        android:id="@+id/main_tab_playground_lay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="@null"
+	        android:clickable="true"
+			android:visibility="gone"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:id="@+id/main_tab_playground_img"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:src="@drawable/navbar_icon_playground" />
+	
+	        <TextView
+	            android:id="@+id/main_tab_playground_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/playground"
+	            android:textColor="@color/bottom_text_color"
+	            android:textSize="14sp" />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/main_tab_user_lay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="@null"
+	        android:clickable="true"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:id="@+id/main_tab_user_img"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:src="@drawable/navbar_icon_user" />
+	
+	        <TextView
+	            android:id="@+id/main_tab_user_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/mine"
+	            android:textColor="@color/bottom_text_color"
+	            android:textSize="14sp" />
+	    </LinearLayout>
+		<!-- 暂时不要“更多” -->
+	    <LinearLayout
+	        android:id="@+id/main_tab_more_lay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="@null"
+	        android:clickable="true"
+	        android:visibility="gone"
+	        android:gravity="center_horizontal"
+	        android:orientation="vertical" >
+	
+	        <ImageView
+	            android:id="@+id/main_tab_more_img"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:src="@drawable/navbar_icon_more" />
+	
+	        <TextView
+	            android:id="@+id/main_tab_more_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="更多"
+	            android:textColor="@color/bottom_text_color"
+	            android:textSize="14sp" />
+	    </LinearLayout>
+	</LinearLayout>
+
+    <include
+            android:id="@+id/navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            layout="@layout/navigation_course_view"/>
+</RelativeLayout>

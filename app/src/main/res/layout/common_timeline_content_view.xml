@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tming.openuniversity.view.TimelineContentView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:longClickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <com.tming.openuniversity.view.LinkView
+        android:id="@+id/timeline_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:layout_marginBottom="6dp"
+        android:autoLink="web|email"
+        android:focusable="false"
+        android:lineSpacingMultiplier="1"
+        android:text=""
+        android:textSize="16dp" >
+    </com.tming.openuniversity.view.LinkView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/common_timeline_item_view_content_image_1_iv"
+            style="@style/common_timeline_small_image_view"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/common_timeline_item_view_content_image_2_iv"
+            style="@style/common_timeline_small_image_view"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="6dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/common_timeline_item_view_content_image_3_iv"
+            style="@style/common_timeline_small_image_view"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="6dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/common_timeline_item_view_content_image_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+        <ImageView
+            android:id="@+id/common_timeline_item_view_content_image_4_iv"
+            style="@style/common_timeline_small_image_view"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/common_timeline_item_view_content_image_5_iv"
+            style="@style/common_timeline_small_image_view"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="6dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/common_timeline_item_view_content_big_image_iv"
+        android:layout_width="@dimen/common_timeline_item_big_image_max_width"
+        android:layout_height="@dimen/common_timeline_item_big_image_max_height"
+        android:adjustViewBounds="true"
+        android:focusable="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/image_loading"
+        android:visibility="visible" />
+</com.tming.openuniversity.view.TimelineContentView>
+

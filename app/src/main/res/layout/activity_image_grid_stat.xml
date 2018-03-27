@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_image_grid_all_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+    <RelativeLayout
+            android:id="@+id/activity_image_grid_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_height">
+
+        <include
+                android:id="@+id/relateme_list_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                layout="@layout/common_choose_pic_stat"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/activity_image_grid_preview_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10px"
+            android:background="#bdbdbd"
+            android:orientation="horizontal">
+
+        <com.tming.openuniversity.view.plaza.ShowGridViewImageView
+                android:id="@+id/activity_image_grid_preview_gv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:focusable="false"
+                android:horizontalSpacing="@dimen/_6px"
+                android:verticalSpacing="0dp"
+                android:scrollbars="none"
+                android:listSelector="@null"
+                android:numColumns="5">
+        </com.tming.openuniversity.view.plaza.ShowGridViewImageView>
+        <LinearLayout
+                android:id="@+id/activity_image_grid_preview_but_ll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_92px"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#23bd8b"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/preview_confirm_but_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="确定"/>
+            <TextView
+                    android:id="@+id/preview_count_but_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="0/5"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/preview_confirm_pic_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_image_grid_rl"
+            android:layout_above="@+id/activity_image_grid_preview_rl"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+        <GridView
+                android:id="@+id/preview_confirm_pic_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_2px"
+                android:paddingRight="@dimen/_2px"
+                android:paddingTop="@dimen/_3px"
+                android:paddingBottom="@dimen/_3px"
+                android:horizontalSpacing="@dimen/_6px"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:listSelector="@null"
+                android:verticalSpacing="@dimen/_6px">
+        </GridView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/notice_detail_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_head_layout_1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notice_detail_head" >
+
+        <RelativeLayout
+            android:id="@+id/notice_detail_body_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp" >
+
+            <TextView
+                android:id="@+id/notice_detail_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_27px" />
+
+            <TextView
+                android:id="@+id/notice_detail_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notice_detail_title_tv"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_24px" />
+
+            <View
+                android:id="@+id/notice_detail_line_tv"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/notice_detail_time_tv"
+                android:background="@color/light_dark" />
+
+            <!-- <TextView
+                android:id="@+id/notice_detail_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notice_detail_line_tv"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_24px" /> -->
+            
+            <LinearLayout
+                android:layout_below="@+id/notice_detail_line_tv"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+				<ImageView
+	                android:id="@+id/notice_detail_image"
+	                android:layout_width="wrap_content"
+	                android:layout_height="100dp"
+	                android:layout_marginBottom="8dp"
+	                android:layout_gravity="left"
+	                android:scaleType="centerCrop" 
+	                android:visibility="gone"/>
+	            <!--<com.tming.openuniversity.view.LinkView-->
+                <TextView
+	                android:id="@+id/notice_detail_content_tv"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+                    android:autoLink="email"
+	                android:textColorLink="@color/title_green"
+                    android:linksClickable="true"
+	                android:textSize="@dimen/_24px" />
+	
+	            
+            
+        	</LinearLayout>
+            
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- 网络指示标 -->
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view"
+        android:visibility="gone" />
+	<TextView 
+        android:id="@+id/no_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:textColor="@color/light_black"
+        android:text="@string/notice_have_been_deleted"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

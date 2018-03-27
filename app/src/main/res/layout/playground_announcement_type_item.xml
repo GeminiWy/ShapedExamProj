@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/announcement_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/announcement_class_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_54px"
+        android:paddingLeft="@dimen/_21px"
+        android:paddingRight="@dimen/_21px"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/announcement_class_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24px"
+            android:text="我的班级"
+            android:textColor="@color/announcement_tv_color" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/announcement_class_delive"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@color/announcement_view_color" />
+    
+    <LinearLayout
+        android:id="@+id/announcement_school_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_54px"
+        android:paddingLeft="@dimen/_21px"
+        android:paddingRight="@dimen/_21px"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/announcement_school_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24px"
+            android:text="我的教学点"
+            android:textColor="@color/announcement_tv_color" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/announcement_school_delive"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:background="@color/announcement_view_color" />
+    
+        <LinearLayout
+        android:id="@+id/announcement_college_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_54px"
+        android:paddingLeft="@dimen/_21px"
+        android:paddingRight="@dimen/_21px"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/announcement_college_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24px"
+            android:text="开放大学"
+            android:textColor="@color/announcement_tv_color" />
+    </LinearLayout>
+
+</LinearLayout>

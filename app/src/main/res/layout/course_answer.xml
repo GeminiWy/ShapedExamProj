@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/course_answer_head_layout"
+        layout="@layout/common_header" />
+
+    <TextView
+        android:id="@+id/course_answer_name_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course_answer_head_layout"
+        android:layout_margin="10dp"
+        android:text="计算机组成原理"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/course_answer_lv"
+        android:layout_below="@id/course_answer_name_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000" />
+
+</RelativeLayout>

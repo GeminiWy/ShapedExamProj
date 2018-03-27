@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 通用返回头部 -->
+    <RelativeLayout 
+       android:layout_width="match_parent"
+   	   android:layout_height="@dimen/common_height"
+   	   android:background="@color/title_green"> 
+	    <Button
+	        android:id="@+id/common_head_left_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="25dp"
+			android:drawableLeft="@drawable/msg_back_icon"
+			android:text=""
+			android:textAlignment="viewEnd"
+			android:textColor="@android:color/white"
+			android:background="@drawable/null_foreground_button_selector"
+	        android:clickable="true"/>
+	    <TextView 
+	        android:id="@+id/head_title_tv"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="@string/search_result_by_user"
+	        android:gravity="center"
+	        android:textColor="@android:color/white"
+	        android:textSize="@dimen/_27px"/>
+	    <Button
+	        android:id="@+id/common_head_right_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="10dp"
+	        android:gravity="center"
+	        android:layout_alignParentRight="true"
+			android:drawableRight="@drawable/list_dot2"
+			android:textColor="@android:color/white"
+			android:background="@drawable/null_foreground_button_selector"
+	        android:clickable="true"/> 
+	</RelativeLayout>
+</RelativeLayout>

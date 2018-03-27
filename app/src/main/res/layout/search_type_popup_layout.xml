@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_type_top_tips_bg"
+    android:layout_marginLeft="1dp"
+    android:orientation="vertical" >
+    <!--  android:background="@color/announcement_bg" 
+    android:background="@drawable/search_type_top_tips_bg" -->
+      <Button
+        android:id="@+id/all_search_type_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:background="@drawable/search_type_pop_item_selector"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="1dp" 
+        android:text="@string/search_by_all"
+        android:textSize="@dimen/_18px" />
+    <Button
+        android:id="@+id/user_search_type_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:background="@drawable/search_type_pop_item_selector"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="1dp" 
+        android:text="@string/search_by_user"
+        android:textSize="@dimen/_18px" />
+    <Button
+        android:id="@+id/specialty_search_type_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:background="@drawable/search_type_pop_item_selector"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="1dp" 
+        android:text="@string/search_by_specialty"
+        android:textSize="@dimen/_18px" />
+	 
+	<Button
+        android:id="@+id/course_search_type_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:background="@drawable/search_type_pop_item_selector"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="1dp" 
+        android:layout_marginTop="1dp"
+        android:textSize="@dimen/_18px" 
+        android:text="@string/search_by_course"/>
+	
+	<Button
+        android:id="@+id/pub_search_type_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:background="@drawable/search_type_pop_item_selector"
+        android:textColor="@color/white"
+        android:gravity="left|center_vertical" 
+        android:paddingLeft="1dp" 
+        android:layout_marginTop="1dp"
+        android:textSize="@dimen/_18px" 
+        android:text="@string/search_by_pub"/>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/homework_tv_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp" 
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView 
+            android:id="@+id/homework_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_60px"
+            android:text="一次作业"
+            android:textColor="@color/title_green"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"
+       		android:background="@drawable/white_bg_green_border"
+            android:textSize="15dp"/>
+        <Button
+            android:id="@+id/homework_tv_btn"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/homework_tv"
+            android:layout_marginRight="-4dp"
+            android:layout_marginTop="-2dp"
+            android:text="@string/is_to_commit"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:paddingBottom="2dp"
+            android:visibility="gone"
+            android:background="@drawable/classroom_icon_homework1"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/coach_topicdetail_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+
+    <com.tming.common.view.RefreshableListView
+        android:id="@+id/coach_topicdetail_content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/coach_topicdetail_head_layout"
+        android:layout_margin="10dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:listSelector="@null" />
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view"
+        android:visibility="gone" />
+
+</RelativeLayout>

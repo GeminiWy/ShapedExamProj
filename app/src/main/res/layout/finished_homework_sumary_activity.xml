@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 已完成的作业列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:background="@color/common_bg">
+	<include 
+	    android:id="@+id/finished_homework_head"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    layout="@layout/common_head_layout_1"/>
+    <com.tming.common.view.support.pulltorefresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id = "@+id/finished_homework_sumary_activity_lv"
+        android:layout_width = "fill_parent"   
+        android:layout_height = "fill_parent"
+        android:layout_below="@+id/finished_homework_head"
+        android:listSelector="@color/transparent"
+	    android:cacheColorHint="@color/transparent"
+	    android:scrollbars="none"
+        android:dividerHeight="0dp"
+        ptr:ptrMode="pullFromStart"
+        android:divider="@null"/>
+	<include 
+	    android:id="@+id/finished_homework_sumary_activity_error_lay"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_below="@+id/finished_homework_head"
+	    layout="@layout/error_view"/>
+	<include 
+	    android:id="@+id/finished_homework_sumary_activity_loading_lay"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+	    layout="@layout/loading_view"/>
+</RelativeLayout>

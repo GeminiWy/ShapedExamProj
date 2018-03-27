@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+    <!-- android:background="@drawable/login_bg" -->
+    <RelativeLayout
+        android:id="@+id/my_cover_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true" >
+      	<RelativeLayout 
+      	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:layout_centerHorizontal="true"
+      	    android:layout_above="@+id/my_name_tv">
+			<com.tming.openuniversity.view.CircularImage
+			    android:id="@+id/my_photo_bg_iv"
+	            android:layout_width="88dp"
+	            android:layout_height="88dp" />
+	        <com.tming.openuniversity.view.CircularImage
+	            android:id="@+id/my_photo_iv"
+	            android:layout_width="75dp"
+	            android:layout_height="75dp"
+	            android:layout_centerInParent="true" />
+	        <ImageView 
+			    android:id="@+id/my_teacher_icon"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/icon_t"
+			    android:visibility="gone"
+			    android:layout_alignBottom="@+id/my_photo_bg_iv"
+			    android:layout_alignRight="@+id/my_photo_bg_iv"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/my_specialty_tv"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="asds"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/my_teacher_mark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/my_name_tv"
+            android:layout_alignBottom="@+id/my_name_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="老师"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+        <com.tming.openuniversity.view.ScrollableTextView
+            android:id="@+id/my_specialty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/my_class_tv"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+		<TextView 
+		    android:id="@+id/my_class_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/white"
+		    android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:textSize="14dp"/>
+        <ImageView
+            android:id="@+id/my_setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="13dp"
+            android:visibility="gone"
+            android:src="@drawable/mine_icon_sets"  />
+   </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+    <!-- 专业详情-专业课程 -->
+	<com.tming.common.view.RefreshableListView
+	    android:id="@+id/lv_major_course_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/white"
+	    android:layout_marginTop="10dp" />
+</RelativeLayout>

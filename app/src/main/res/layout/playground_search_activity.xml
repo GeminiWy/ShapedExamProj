@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:id="@+id/head_title_tv"/>
+        <include
+                android:id="@+id/playground_searchresult_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/playground_search_result_view" android:layout_below="@+id/head_title_tv"/>
+        <include
+                android:id="@+id/loading_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_72px"
+                layout="@layout/loading_view"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/search_title_bg_green">
+        <com.tming.openuniversity.view.search.CustomAutoCompleteSearchView
+                android:id="@+id/search_all_auto_complete_ed"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" />
+        <!--
+        <com.tming.openuniversity.view.search.CustomSearchView
+             android:id="@+id/search_all_auto_complete_ed"
+             android:layout_weight="1.0"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content" />
+          -->
+    </LinearLayout>
+</RelativeLayout>

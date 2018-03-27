@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 笔记的文本项 -->
+    <RelativeLayout 
+        android:id="@+id/my_note_txt_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90px"
+        android:background="@color/white">
+        <RelativeLayout 
+            android:layout_toLeftOf="@+id/my_note_txt_img"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp">
+	        <TextView 
+	            android:id="@+id/my_note_txt_title_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/black"
+	            android:textSize="16dp"
+	            android:singleLine="true"
+	            android:ellipsize="end"
+	            android:text=""/>
+	        <TextView 
+	            android:id="@+id/my_note_txt_video_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/light_black"
+	            android:singleLine="true"
+	            android:layout_below="@+id/my_note_txt_title_tv"
+	            android:text=""/>
+	        <TextView 
+	            android:id="@+id/my_note_txt_time_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/light_black"
+	            android:singleLine="true"
+	            android:layout_toRightOf="@+id/my_note_txt_video_tv"
+	            android:layout_below="@+id/my_note_txt_title_tv"
+	            android:text=""/>
+        </RelativeLayout>
+        <ImageView 
+            android:id="@+id/my_note_txt_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_dot_selector"/>
+        
+    </RelativeLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:layout_below="@+id/my_note_txt_item"
+	    android:background="@color/list_seperator_bg"/>
+</RelativeLayout>

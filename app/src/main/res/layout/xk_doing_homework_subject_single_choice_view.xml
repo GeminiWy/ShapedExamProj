@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tming.openuniversity.view.xkhomework.XKSingleChoiceSubjectView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/doing_homework_subject_content_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <com.tming.openuniversity.view.AutoImageLoadTextView
+                    android:id="@+id/doing_homework_subject_single_choice_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.下列选项中，（  ）属于企业在一定时期内为生成一定种类、一定数量的产品支持的各种费用总和"
+                    style="@style/doing_homework_content_text"/>
+            <com.tming.openuniversity.view.homework.OptionsView
+                    android:id="@+id/doing_homework_subject_single_choice_options_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</com.tming.openuniversity.view.xkhomework.XKSingleChoiceSubjectView>

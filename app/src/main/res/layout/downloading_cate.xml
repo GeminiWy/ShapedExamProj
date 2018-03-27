@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_54px" >
+
+    <TextView
+        android:id="@+id/downloadingcate_loge_tv"
+        android:layout_width="5dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:background="@color/title_green" />
+
+    <TextView
+        android:id="@+id/downloadingitemcate_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/downloadingcate_loge_tv"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="正在下载" />
+    
+    <Button 
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:text="全部暂停"
+		android:textSize="10sp"
+		android:visibility="gone"
+		android:textColor="@color/title_green"
+        android:background="@drawable/white_bg_green_border"/>
+
+</RelativeLayout>

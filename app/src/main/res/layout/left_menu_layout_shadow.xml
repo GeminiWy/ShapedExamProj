@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tming.openuniversity.view.LeftMenuLayoutWithShadow xmlns:android="http://schemas.android.com/apk/res/android"
+                                                    xmlns:slidemenudemo="http://schemas.android.com/apk/res-auto"
+                                                    android:id="@+id/main_left_layout"
+                                                    android:layout_width="270dip"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@drawable/leftmenu_border"
+                                                    slidemenudemo:layout_role="primaryMenu" >
+    <RelativeLayout
+            android:id="@+id/main_menu_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/title_green" >
+        <!-- 搜索框-->
+        <RelativeLayout
+                android:id="@+id/courselist_search_rl"
+                android:layout_width="270dp"
+                android:layout_height="@dimen/common_height"
+                android:background="@drawable/left_menu_head_linercolor" >
+            <!-- @color/title_green
+
+
+            <View android:layout_width="17dp"
+                  android:layout_height="match_parent"
+                  android:background="@drawable/left_menu_head_linercolor"
+                  android:id="@+id/divide_view3"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentTop="true"
+                  android:alpha="1"/>
+            -->
+            <RelativeLayout
+                    android:id="@+id/courselist_search_rl2"
+                    android:layout_width="265dp"
+                    android:layout_height="fill_parent"
+                    android:padding="8dp" >
+                <RelativeLayout
+                        android:layout_width="260dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/search_content_shape">
+                    <ImageView
+                            android:id="@+id/courselist_searchicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/classroom_icon_search" />
+                    <EditText
+                            android:id="@+id/search_keyword"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/courselist_searchicon"
+                            android:background="@null"
+                            android:hint="@string/playground_search_hint"
+                            android:editable="false"
+                            android:textSize="14dp"
+                            android:lines="1" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/content_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/left_bg_gray"
+                android:layout_below="@+id/courselist_search_rl">
+            <LinearLayout
+                        android:id="@+id/menu_ll2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/left_menu_linercolor"
+                        android:orientation="vertical">
+                    <!-- tab切换 -->
+                    <LinearLayout
+                            android:id="@+id/tab_ll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/common_height"
+                            android:clickable="true"
+                            android:background="@color/white"
+                            android:orientation="horizontal" >
+                        <RelativeLayout
+                                android:id="@+id/tab_course"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/common_height"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true" >
+                            <TextView
+                                    android:id="@+id/tab_course_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:text="课程"
+                                    android:textColor="#23bd8b"
+                                    android:textSize="16dp" />
+                            <LinearLayout
+                                    android:id="@+id/courselist_tab_on"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="#23bd8b"
+                                    android:orientation="horizontal" >
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                                android:id="@+id/tab_professional"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/common_height"
+                                android:layout_weight="1"
+                                android:clickable="true" >
+
+                            <TextView
+                                    android:id="@+id/tab_professional_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:text="专业"
+                                    android:textColor="@color/title_green"
+                                    android:textSize="16dp" />
+
+                            <LinearLayout
+                                    android:id="@+id/professional_tab_on"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="#23bd8b"
+                                    android:visibility="invisible"
+                                    android:orientation="horizontal">
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!-- 课程 -->
+                    <LinearLayout
+                            android:id="@+id/course_cate_lay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+                        <!--所有课程-->
+                        <RelativeLayout
+                                android:id="@+id/allcourse_item"
+                                android:layout_width="fill_parent"
+                                android:layout_height="50dp"
+                                android:clickable="true" >
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="所有课程"
+                                    android:textColor="@color/left_menu_gray"
+                                    android:textSize="16dp" />
+
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="15dp"
+                                    android:src="@drawable/list_arrowright2" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:background="#393939"
+                                android:visibility="gone"
+                                android:orientation="vertical" >
+                        </LinearLayout>
+                        <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:background="#EAEAEA"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical" >
+
+                            <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="课程分类"
+                                    android:textColor="@color/left_menu_gray"
+                                    android:textSize="16dp" />
+                        </LinearLayout>
+                        <!--课程分类列表-->
+                        <com.tming.common.view.RefreshableListView
+                                android:id="@+id/course_category_lv"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="0dp"
+                                android:divider="@drawable/listview_divider_coursecategory"
+                                android:dividerHeight="1px"
+                                android:fadingEdge="none" />
+                    </LinearLayout>
+                    <!-- 专业 -->
+                    <LinearLayout
+                            android:id="@+id/profesional_lay"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                        <com.tming.common.view.RefreshableListView
+                                android:id="@+id/professional_lv"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:divider="@drawable/listview_divider_coursecategory"
+                                android:dividerHeight="1px"
+                                android:fadingEdge="none" />
+                    </LinearLayout>
+                </LinearLayout>
+            <!-- 搜索栏下方右侧阴影
+            <View android:layout_width="17dp"
+                  android:layout_height="fill_parent"
+                  android:background="@drawable/left_menu_linercolor"
+                  android:id="@+id/divide_view2"
+                  android:layout_alignParentRight="true"
+                  android:alpha="1"/>
+
+                   -->
+
+        </RelativeLayout>
+        <include
+                android:id="@+id/loading_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                layout="@layout/loading_view_white"
+                android:visibility="invisible" />
+    </RelativeLayout>
+</com.tming.openuniversity.view.LeftMenuLayoutWithShadow>
+

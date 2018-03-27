@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/playground_item_border"
+    android:id="@+id/timeline_item_lay" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp" >
+
+        <com.tming.openuniversity.util.CircleImageView
+            android:id="@+id/search_user_photo"
+            style="@style/user_face_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/all_use_icon_photo" />
+
+        <TextView
+            android:id="@+id/serach_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/search_user_photo" 
+            android:layout_centerVertical="true"
+            android:text="" />
+     <!--    <LinearLayout
+            android:id="@+id/search_user_sexage_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/serach_user_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/search_user_photo"
+            android:background="@android:color/darker_gray"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/search_user_sex_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/classroom_icon_male" />
+
+            <TextView
+                android:id="@+id/search_user_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="25" />
+        </LinearLayout> 
+        <LinearLayout            
+            android:id="@+id/user_type_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/serach_user_name"
+            android:layout_toRightOf="@id/search_user_sexage_lay"
+            android:layout_marginLeft="10dp" 
+            android:background="@color/announcement_tv_color"
+            android:gravity="center" >-->
+     <!--    <LinearLayout            
+            android:id="@+id/user_type_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/serach_user_name"
+            android:layout_toRightOf="@id/search_user_photo"
+            android:layout_marginLeft="10dp" 
+            android:background="@color/announcement_tv_color"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/user_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:text="@string/search_result_type_student" />
+        </LinearLayout> -->
+        
+        <ImageView
+            android:id="@+id/course_arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:src="@drawable/list_arrowright2" />
+	</RelativeLayout>
+
+</RelativeLayout>

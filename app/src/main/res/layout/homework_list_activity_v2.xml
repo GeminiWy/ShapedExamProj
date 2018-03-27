@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 头部-->
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homework_list_head"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_head_layout_1"/>
+    <TextView 
+        android:id="@+id/no_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:textColor="@color/light_black"
+        android:text="@string/no_homework"
+        android:layout_centerInParent="true"/>
+    <com.tming.common.view.RefreshableListView 
+        android:id="@+id/refreshable_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/homework_list_head"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#dbdbdb"
+        android:dividerHeight="0.5dp" />
+	
+</RelativeLayout>

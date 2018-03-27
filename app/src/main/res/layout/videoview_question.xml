@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="180dp"
+                android:layout_height="match_parent">
+
+
+    <TextView
+            android:id="@+id/videoview_menu_note_noquestion_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="你还没对该课件发起提问！"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/videoview_question_head_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="课程提问"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    <View
+            android:id="@+id/videoview_question_line_view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/videoview_question_head_tv"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/light_dark"/>
+    
+    <RelativeLayout
+            android:id="@+id/videoview_question_lay"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:padding="5dp"
+            android:background="#0d0c0c"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/videoview_question_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/title_green"
+                android:text="新增提问"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+    </RelativeLayout>
+    <com.tming.common.view.RefreshableListView
+            android:id="@+id/refreshable_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:cacheColorHint="@color/transparent"
+            android:layout_below="@id/videoview_question_line_view"
+            android:layout_above="@id/videoview_question_lay"
+            android:layout_marginLeft="10dp"
+            android:divider="@null"
+            android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

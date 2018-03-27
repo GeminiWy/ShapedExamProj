@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_header" />
+
+    <ScrollView
+        android:id="@+id/msg_talk_setting_group_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_item_bg"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/msg_talk_setting_left_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_group"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/msg_talk_setting_roomname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/msg_talk_setting_left_tv"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp" />
+              
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_item_bg"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_group_num"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/msg_talk_setting_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/title_green"
+
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/msg_talk_setting_ren_tv"
+                    android:textSize="24dp" />
+                
+                <TextView
+                    android:id="@+id/msg_talk_setting_ren_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/im_talk_setting_group_ren"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp" />
+              
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/msg_talk_setting_record_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/white_item_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/im_talk_setting_clear_record"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+              
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 聊天设置(私聊) -->
+
+</LinearLayout>

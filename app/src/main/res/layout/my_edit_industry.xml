@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/myeditindustry_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:id="@+id/myeditindustry_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:layout_below="@id/myeditindustry_head_layout"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_item_bg" >
+
+        <EditText
+            android:id="@+id/myeditindustry_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:hint="@string/hint_edit_work"
+            android:padding="5dp" />
+        <Button
+            android:id="@+id/myeditindustry_clean_btn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/login_x"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- <TextView
+        android:id="@+id/myeditindustry_title_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myeditindustry_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="所属行业"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" /> -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myeditindustry_rl" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/myeditindustry_it_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_gy_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_it_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_sy_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_gy_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_jr_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_sy_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_wh_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_jr_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_ys_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_wh_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_yw_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_ys_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_fl_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_yw_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_jy_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_fl_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_zf_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_jy_layout"
+                layout="@layout/my_edit_industry_item" />
+
+            <include
+                android:id="@+id/myeditindustry_xs_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_zf_layout"
+                layout="@layout/my_edit_industry_item" />
+            
+             <include
+                android:id="@+id/myeditindustry_other_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_54px"
+                android:layout_below="@id/myeditindustry_xs_layout"
+                layout="@layout/my_edit_industry_item" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

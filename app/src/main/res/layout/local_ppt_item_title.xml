@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 本地课件项标题 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height"
+        android:id="@+id/local_ppt_item_title"
+        android:background="@color/transparent">
+        <TextView
+            android:id="@+id/local_ppt_item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:layout_toLeftOf="@+id/local_ppt_item_img"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:text=""/>
+        <ImageView
+            android:id="@+id/local_ppt_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/list_arrowright4"/>
+        <View 
+             android:id="@+id/h_line"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/h_line_bg"
+             android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

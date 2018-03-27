@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/myedittime_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+
+    <TextView
+        android:layout_below="@id/myedittime_head_layout"
+        android:id="@+id/myedittime_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/edit_birthday_tip"
+        android:calendarViewShown="false"
+        android:textColor="@color/black" />
+    
+    <DatePicker 
+        android:id="@+id/myedittime_dp"
+		android:layout_below="@id/myedittime_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"/>
+
+</RelativeLayout>

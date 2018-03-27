@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/send_trends_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <!-- 头部 -->
+
+    <include
+        android:id="@+id/relateme_list_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_head_layout_1" />
+
+    <RelativeLayout
+        android:id="@+id/send_context_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relateme_list_head"
+        android:padding="@dimen/_10px" >
+
+        <ScrollView
+            android:id="@+id/send_context_sc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153px"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/send_context_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="写评论..."
+                    android:minLines="2" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <com.tming.openuniversity.view.plaza.ShowGridViewImageView
+        android:id="@+id/send_picture_list_gv"
+        android:layout_width="@dimen/_345px"
+        android:layout_height="@dimen/_225px"
+        android:layout_below="@+id/send_context_ll"
+        android:layout_margin="@dimen/_10px"
+        android:focusable="false"
+        android:horizontalSpacing="6dp"
+        android:longClickable="true"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="6dp" >
+    </com.tming.openuniversity.view.plaza.ShowGridViewImageView>
+
+    <LinearLayout
+        android:id="@+id/send_icon_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/timeline_comment_line_delive"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_2px"
+            android:layout_centerVertical="true"
+            android:background="@color/playground_list_line_bg" />
+        <!-- 聊天输入框 -->
+
+        <include layout="@layout/tweet_pub_footer" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_72px"
+        layout="@layout/loading_view" />
+
+</RelativeLayout>

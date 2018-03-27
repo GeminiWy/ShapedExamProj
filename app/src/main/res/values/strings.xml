@@ -1,0 +1,607 @@
+<resources>
+
+    <!-- 通知栏 -->
+    <string name="no_wifi_notification_title_text">当前非WIFI模式，注意流量</string>
+    <string name="no_wifi_notification_content_text">在线看视频资源比较耗费流量</string>
+    <string name="app_name">形考</string>
+    <string name="app_display_text">福建电大形考</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="exit_hint">再按一次退出</string>
+    <string name="please_open_network">网络不可用</string>
+    <string name="network_ungeilivable">网络不给力啊!</string>
+
+    <!-- 返回标识 -->
+    <string name="request_success">操作成功</string>
+    <string name="request_error">操作失败</string>
+    <string name="param_error">参数错误</string>
+    <string name="record_not_exist">记录不存在</string>
+    <string name="db_operation">数据库操作</string>
+    <string name="system_error">系统错误</string>
+    <string name="api_error">数据获取失败</string>
+    <string name="net_error">网络不给力</string>
+    <string name="net_error_or_api_error">网络异常或远程接口出错</string>
+    <string name="net_error_tip">网络请求异常，请稍候再试！</string>
+
+
+    <!-- 登录页面 -->
+    <string name="login_code_error">登录失败,请稍后再试</string>
+    <string name="login_enter_username">请输入用户名</string>
+    <string name="login_enter_password">请输入密码</string>
+    <string name="login_enter_username_and_password">账号或密码为空</string>
+    <string name="login_username_or_password_error">账号或密码错误</string>
+    <string name="login_username_format_error">用户名为1&#8211;80个字符</string>
+    <string name="login_password_format_error">密码只能包含字母、数字，区分大小写</string>
+    <string name="login_id_not_exist_error">该账号不存在，请重新输入</string>
+    <string name="login_can_not_read_user_info_error">获取不到学生的报名信息</string>
+    <string name="login_id_not_publish_error">该学生的学号还没有发布</string>
+    <string name="login_loading_text">登录中...</string>
+
+    <!-- 验证信息 -->
+    <string name="verification_hint">请输入验证码</string>
+    <string name="verification_error">验证码错误！</string>
+
+    <!-- 头部文字 -->
+    <string name="add">添加</string>
+    <string name="finished">已完成</string>
+    <string name="login">登录</string>
+    <string name="more">更多</string>
+
+    <!-- 左抽屉 -->
+    <string name="all_course_text">所有课程</string>
+    <!-- 课堂 -->
+    <string name="course_title">课堂</string>
+    <string name="no_play_history">暂无播放历史</string>
+    <string name="no_study_course">暂无在修课程</string>
+    <string name="check_all_study_resource_tip">查看全部学习资源</string>
+    <string name="check_all_study_resource_title">学习资源</string>
+    <string name="check_by_specialty">按专业查看</string>
+    <string name="check_all_specialty_title">全部专业</string>
+    <string name="no_local_courseware">您还没有下载课件，可以去课程列表中选择课件下载</string>
+    <string name="no_course">暂无课程</string>
+    <string name="no_more_record">没有更多课程</string>
+    <string name="watch_to_text">看到：</string>
+    <string name="no_records_tip">没记录</string>
+    <string name="no_net_click_tip">点击屏幕，重新加载</string>
+    <string name="download_text">下载管理</string>
+    <string name="download_tip_text">你暂时没有下载过课件</string>
+    <string name="download_tip2_text">可以进入课程页面或在视频页面将课件下载到本地</string>
+    <!-- IM通讯录/消息 -->
+    <string name="msg_net_error">网络连接失败，请检查您的网络状态</string>
+    <string name="msg_reconnect">重新登录</string>
+    <string name="msg_connect_error">消息IM连接失败</string>
+    <string name="msg_connect_pwd_error">消息IM密码错误</string>
+    <string name="msg_can_not_be_null">不能发送空白消息</string>
+    <string name="msg_head">消息</string>
+    <string name="msg_offline">离线</string>
+    <string name="msg_online">在线</string>
+    <string name="msg_hidden">隐身</string>
+    <string name="msg_linking">连接中&#8230;</string>
+    <string name="msg_getting">收取中&#8230;</string>
+    <string name="msg_communication_list">通讯录</string>
+    <string name="msg_notice">系统公告</string>
+    <string name="msg_reminder">我的提醒</string>
+    <string name="msg_news_friend">新的朋友</string>
+    <string name="msg_friend">我的好友</string>
+    <string name="msg_group">我的群组</string>
+    <string name="msg_my_care">我的关注</string>
+    <string name="msg_my_fans">新的朋友</string>
+    <string name="msg_send">发送</string>
+    <string name="msg_have_requested">已请求</string>
+    <string name="msg_have_added">已添加</string>
+    <string name="msg_no_followers">暂无关注列表</string>
+    <string name="msg_no_fans">暂无粉丝列表</string>
+    <string name="msg_no_friends">暂无好友列表</string>
+    <string name="msg_no_students">该班级暂无学生</string>
+    <string name="msg_connecting_tip_text">当前离线状态，正在登录中...</string>
+    <string name="msg_offline_tip_text">当前用户已掉线，请重新登录</string>
+    <!-- 系统公告 -->
+    <string name="notice_list_empty">暂无系统公告</string>
+    <string name="notice_list_activity_title">系统公告</string>
+    <string name="notice_show_detail">查看详情</string>
+    <string name="notice_detail_activity_title">公告详情</string>
+    <string name="notice_have_been_deleted">该条公告已被删除或不存在</string>
+
+    <!-- 我的提醒 -->
+    <string name="remind_my_activity_title">我的提醒</string>    <string name="remind_exam">考试</string>
+    <string name="remind_online_lession">网上教学</string>
+    <string name="remind_select_lession">选课</string>
+    <string name="remind_no_exam">免修免考</string>
+    <string name="remind_exam_list_activity_title">考试提醒</string>
+
+    <!-- 做作业/做测试 -->
+    <string name="error_set">错题集</string>
+    <string name="no_homework">暂无作业</string>
+    <string name="redo_homework">重新作答</string>
+    <string name="highest_score">成绩：</string>
+    <string name="current_score">本次得分:</string>
+    <string name="no_finished_homework">暂无已完成作业</string>
+    <string name="finished_work">已完成作业</string>
+    <string name="time_based">按截止日期</string>
+    <string name="course_based">按课程</string>
+    <string name="from">来源：</string>
+    <string name="is_to_commit">待提交</string>
+    <string name="is_to_correct">待批改</string>
+    <string name="is_out_of_date">已过期</string>
+    <string name="deadline">截止时间：</string>
+    <string name="problem_types">题型总览：</string>
+    <string name="start_test">开始答题</string>
+    <string name="commit_test">提交作业</string>
+    <string name="continue_test">继续答题</string>
+    <string name="last_problem">上一题</string>
+    <string name="next_problem">下一题</string>
+    <string name="progress">进度</string>
+    <string name="answer">答题</string>
+    <string name="commit">交卷</string>
+    <string name="do_wrong">做错</string>
+    <string name="not_done">未做</string>
+    <string name="fucking_genius">天才，你已经拿满分了！</string>
+    <string name="no_more_chance">很遗憾，答题次数已满</string>
+    <string name="empty_work_list">题目列表为空</string>
+    <string name="committed_at">于{0}分提交作业</string>
+
+    <string name="xk_commit">提交</string>
+    <string name="xk_reject">已退回</string>
+    <string name="xk_has_commited">已提交</string>
+    <string name="xk_reject_detail">退回详情</string>
+    <string name="xk_cancel_commit">撤销提交</string>
+    <string name="xk_has_correct">已评阅</string>
+    <string name="xk_correcting">正在评阅</string>
+    <string name="xk_start_task">开始任务</string>
+    <string name="xk_check_detail">查看详情</string>
+    <string name="xk_answer_sheet">答题卡</string>
+    <!-- 错题重做 -->
+    <string name="redo_error_question">错题重做</string>
+    <string name="no_error_question">恭喜，你没有答错的题目！</string>
+    <!-- 形考 -->
+    <string name="xk_commit_test">提交考试</string>
+    <string name="xk_continue_test">继续考试</string>
+    <string name="xk_redo_test">重新考试</string>
+    <string name="xk_start_test">开始考试</string>
+    <string name="xk_no_record">暂无记录</string>
+    <string name="xk_no_task">暂无可做的形考任务</string>
+    <string name="xk_not_start">未开始</string>
+    <!-- 本地课件 -->
+    <string name="go_course_list">去课程列表</string>
+    <string name="local_ppt">本地课件</string>
+    <string name="import_ppt">导入课件</string>
+    <string name="already_have_ppt">本机已有课件:</string>
+    <string name="save">保存</string>
+    <string name="play">播放</string>
+    <string name="delete">删除</string>
+    <string name="share">分享</string>
+    <string name="select_all">全选</string>
+    <string name="full_screen">全屏</string>
+
+    <!-- 课程详情页 -->
+    <string name="course_introduction">课程简介</string>
+    <string name="course_list">课件列表</string>
+    <string name="course_answers">课程答疑</string>
+    <string name="seminar_section">辅导讨论区</string>
+    <string name="question_reply">提问回复</string>
+    <string name="my_question">我的提问</string>
+    <string name="raise_question">发起提问</string>
+    <string name="do_test">做测试</string>
+    <string name="do_homework">做作业</string>
+    <string name="download">下载</string>
+    <string name="score">学分：</string>
+    <string name="period">课时：</string>
+    <string name="student_num">在修学员数：</string>
+    <string name="head_teacher">责任老师：</string>
+    <string name="course_teacher">课程讲师：</string>
+    <string name="already_download">已下载</string>
+    <string name="courseware_downloading">下载中</string>
+    <string name="waiting">等待中</string>
+    <string name="click_play">点击播放：</string>
+    <string name="videoview_loading">努力加载中...</string>
+    <string name="current_play_rate1">已看至</string>
+    <string name="current_play_rate2">，即将为你继续播放</string>
+    <string name="ready_to_play">即将开始播放</string>
+    <string name="no_courseware">暂无课件！</string>
+    <string name="no_questions">暂无答疑！</string>
+    <string name="no_course_description">暂无课程简介。</string>
+    <string name="course_get_url_failed">课件获取失败</string>
+    <!-- 专业详情页 -->
+    <string name="major_levels">学业层次:</string>
+    <string name="major_year">学制:</string>
+    <string name="major_graduate_credit">毕业所需学分:</string>
+    <string name="major_educational_credit">学历所需学分:</string>
+    <string name="major_year_util">年</string>
+    <string name="major_credit_util">分</string>
+    <string name="major_introduction">专业简介</string>
+    <string name="major_rule">专业规则</string>
+    <string name="major_rule_name">专业模块</string>
+    <string name="major_rule_graduate_credit">毕业要求学分</string>
+    <string name="major_rule_educational_credit">学历要求学分</string>
+    <string name="major_course">专业课程</string>
+    <string name="major_cost">收费标准</string>
+    <string name="major_cost_value">注册建档费用：{0}元\n\n选课费用：{1}元/学分</string>
+
+    <!-- 视频播放 -->
+    <string name="video_bar_total_time"> 00:00:00</string>
+    <string name="video_bar_speed">432KB/S</string>
+    <string name="video_bar_sound">声音</string>
+    <string name="video_bar_back">快退</string>
+    <string name="video_bar_next">快进</string>
+    <string name="video_bar_play">播放</string>
+    <string name="click_to_play">点击播放：</string>
+    <string name="null_path">暂无课件！</string><!-- 当前播放路径为空 -->
+
+    <!-- 检查更新对话框 -->
+    <string name="settings_dialog_check_update">检查更新</string>
+    <string name="settings_dialog_wait">请稍等……</string>
+    <string name="settings_dialog_update_version">开放大学已发布了新版本！</string>
+    <string name="settings_dialog_update_certain">立即更新</string>
+    <string name="settings_dialog_update_download_fail">下载失败!</string>
+    <string name="settings_dialog_update_download_fail_no_sdcard">您没有SD卡，下载失败!</string>
+    <string name="settings_no_sd_card">您没有SD卡</string>
+    <string name="settings_dialog_update_cancel">以后再说</string>
+    <string name="settings_dialog_update_no_update">已经是最新版本啦!</string>
+    <string name="settings_dialog_check_fail">检查更新出错</string>
+    <string name="settings_dialog_update_ok">OK</string>
+    <string name="version_updating">努力更新中……</string>
+    <string name="update_describe">更新说明：</string>
+    <string name="latest_version">最新版本：</string>
+    <string name="nolonger_notify">不再提醒</string>
+    <string name="cancel">取消</string>
+
+    <!-- 设置页面 -->
+    <string name="setting">设置</string>
+    <string name="binding_phone">绑定手机号</string>
+    <string name="number_only">号码只能是11个数字</string>
+    <string name="bound">已绑定</string>
+    <string name="unbind">未绑定</string>
+    <string name="non_wifi">非wifi网络时进行提醒</string>
+    <string name="notify_bar">通知栏提示</string>
+    <string name="notify">提醒</string>
+    <string name="sys_annouce">系统公告</string>
+    <string name="group_talk">群聊</string>
+    <string name="personal_talk">私聊</string>
+    <string name="black_list">黑名单</string>
+    <string name="clear_cache">清除系统缓存</string>
+    <string name="version_update">版本更新</string>
+    <string name="already_latest">当前已是最新版本！</string>
+    <string name="has_new_version">有新版本，点击更新！</string>
+    <string name="uesr_helper">使用帮助</string>
+    <string name="about_OU">关于我们</string>
+    <string name="about">关于我们</string>
+    <string name="clear">清除</string>
+    <string name="cache_cleared">缓存已清除</string>
+    <string name="has_open">已开启</string>
+    <string name="has_close">已关闭</string>
+    <string name="feedback_blank_error">反馈意见不能为空！</string>
+    <string name="feedback_least_length">最少输入6个非空格字符！</string>
+    <string name="feedback_commit_success">已收录，感谢你的反馈！</string>
+    <string name="feedback_commit_server_error">抱歉，反馈失败，请稍候再试。</string>
+    <string name="feedback_commit_net_error">反馈失败,请检查网络设置</string>
+    <string name="fj_broadcast_university">福建广播电视大学</string>
+    <string name="fj_open_university">福建开放大学</string>
+    <string name="official_site">官方网站：new.fjou.cn</string>
+    <string name="orgnizer">主办单位：</string>
+    <string name="tech_support">技术支持：福建华渔教育科技有限公司</string>
+    <string name="about_copyright">Copyright © 2015 new.fjou.cn</string>
+    <string name="about_version">(Android版V2.0.0 Beta)</string>
+    <!-- 个人信息页 -->
+    <string name="persion_info_title">个人信息</string>
+    <string name="edit">编辑</string>
+    <string name="follow">加好友</string>
+    <string name="un_follow">取消好友</string>
+    <string name="send_msg">发消息</string>
+    <string name="send_flower">送花</string>
+    <string name="sure">确定</string>
+
+    <!-- 成绩查询 -->
+    <string name="score_query">成绩查询</string>
+    <string name="no_score">暂无成绩</string>
+    <string name="no_need_to_study">免修</string>
+    <string name="no_score_">暂无</string>
+    <!-- 我的 -->
+    <string name="not_paid">待缴费</string>
+    <string name="payment_record">缴费记录</string>
+    <string name="chargeback_record">退款记录</string>
+    <string name="no_note">暂无笔记记录！</string>
+    <!--重复声明 <string name="my_question">我的提问</string> -->
+    <string name="my_note">我的笔记</string>
+    <string name="record_at">记录于&#160;:&#160;</string>
+    <!--重复声明 <string name="score_query">成绩查询</string> -->
+    <string name="my_payment">我的缴费</string>
+
+    <!-- 更多 -->
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_commit">提交</string>
+    <string name="feedback_prompt_words">感谢您使用福建开放大学Android版，如果您在使用过程中遇到任何不便，或有意见及建议都欢迎您反馈给我们。</string>
+    <string name="feedback_hint_words">请输入反馈内容</string>
+
+    <!-- 引导 -->
+    <string name="guide01_title">目标式学习</string>
+    <string name="guide01_content">记录你学习的点点滴滴</string>
+    <string name="guide02_title">贴心提醒</string>
+    <string name="guide02_content">不错过任何一条重要信息</string>
+    <string name="guide03_title">精彩互动</string>
+    <string name="guide03_content">随时分享你的学习心得</string>
+    <string name="guide04_title">身份识别</string>
+    <string name="guide04_content">了解你那些牛逼闪闪的同窗</string>
+
+    <!-- 查看他人信息 -->
+    <string name="university_school">大学&#160;|&#160;</string>
+    <string name="senior_school">高中&#160;|&#160;</string>
+    <string name="junior_school">初中&#160;|&#160;</string>
+    <string name="primary_school">小学&#160;|&#160;</string>
+    <string name="dynamic_empty">暂无动态</string>
+    <string name="follow_add">已添加好友</string>
+    <string name="follow_del">已取消好友</string>
+
+
+    <!-- 绑定手机页 -->
+    <string name="binding_et_hint1">请输入要绑定的手机号码</string>
+    <string name="binding_et_hint2">请输入验证码</string>
+    <string name="bind_phone">绑定手机</string>
+    <string name="not_binding">你还没有绑定手机，绑定手机号可以用于找回密码</string>
+    <string name="sending_msg">为了验证你的身份，我们将会给你发送短信验证码</string>
+    <string name="has_send_msg_to">包含验证码的短信已经发送至：</string>
+    <string name="resend">重新发送</string>
+    <string name="phone_has_been_bound">账号已经绑定该手机号码，请更换</string>
+    <string name="wrong_num">验证码错误</string>
+    <string name="recent_phone">当前绑定的手机：</string>
+    <string name="binding_to_find_code">绑定手机号可以用于找回密码</string>
+    <string name="change">更换</string>
+    <string name="next_step">下一步</string>
+    <string name="finish">完成</string>
+    <string name="please_enter_code">请输入登录密码</string>
+
+    <!-- 操场 -->
+    <string name="playground">操场</string>
+    <string name="playground_same_class">同班同学</string>
+    <string name="playground_same_college">同学</string>
+    <string name="playground_search_hint">搜索用户、课程或内容</string>
+    <string name="playground_search_hint_old">搜索用户、专业、课程或内容</string>
+    <string name="my_flower">我的鲜花</string>
+    <string name="personal_dynamics">个人动态</string>
+    <string name="other_personal_dynamics">%s的个人动态</string>
+    <string name="replay_comment">回复评论</string>
+    <string name="del_comment">删除</string>
+    <string name="see_personal_info">查看个人信息</string>
+    <string name="del_failed">删除动态失败</string>
+    <string name="share_photoes">分享图片</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="playgroung_searchresult_course">相关课程</string>
+    <string name="playgroung_searchresult_users">相关用户</string>
+    <string name="playgroung_searchresult_timeline">相关动态</string>
+    <!-- 个人动态 -->
+    <string name="personal_dynamics_no_date_tip">你还没有发布过动态喔！</string>
+    <string name="personal_dynamics_other_no_date_tip">他还没有发布动态喔！</string>
+    <string name="see_allcourses_text">查看全部课程</string>
+    <string name="tip_study_text">想学就学</string>
+    <string name="tip_hot_text">热门动态，等你发掘</string>
+    <string name="tip_user_text">聊天和交友，一个都不能少</string>
+    <string name="timeline_has_been_delete">该动态已经消失不见了~</string>
+    <!-- 搜索 -->
+    <string name="search_cancel">取消</string>
+    <string name="search_btn">搜索</string>
+    <string name="search_type_default">用户</string>
+    <string name="search_by_all">搜全部</string>
+    <string name="search_by_specialty">搜专业</string>
+    <string name="search_by_user">搜用户</string>
+    <string name="search_by_course">搜课程 </string>
+    <string name="search_by_pub">搜内容</string>
+    <string name="search_hint_default_old">搜索用户、专业、课程或内容</string>
+    <string name="search_hint_default">搜索用户、课程或内容</string>
+    <string name="show_all_search_record">全部搜索记录</string>
+    <string name="clear_all_search_record">清楚搜索记录</string>
+    <string name="search_course_lecturer">课程讲师：</string>
+    <string name="search_course_credits">学费：</string>
+    <string name="search_specialty_years">年限：</string>
+    <string name="search_specialty_cash">每学分学费：</string>
+    <string name="search_empty_error">搜索内容不能为空</string>
+
+    <!-- 搜索结果 -->
+    <string name="search_result_by_user">相关用户 </string>
+    <string name="search_result_by_user_number">(%1$d人)</string>
+    <string name="search_result_by_course_number">%1$d个</string>
+    <string name="search_result_by_specialty">相关专业</string>
+    <string name="search_result_by_course">相关课程</string>
+    <string name="search_result_by_pub">相关动态</string>
+    <string name="search_no_date_result_tip">没有搜索到相关数据。</string>
+    <string name="search_no_key_result_tip">没有输入搜索关键字，请重新输入...</string>
+    <string name="search_result_type_student">学生 </string>
+    <string name="search_result_type_teacher">教师 </string>
+
+    <!-- pull to refresh -->
+    <!-- 教师可见 -->
+
+    <string name="teacher_course_title">负责课程:</string>
+    <string name="teacher_classes_title">负责班级:</string>
+    <string name="teacher_students_label">在修学员:</string>
+    <string name="teacher_studentscount_label">学生数量:</string>
+    <string name="teacher_course_empty_title">你暂未负责具体的课程和班级。</string>
+    <string name="teacher_course_empty_title_1">办公相关操作请在PC端完成！</string>
+
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开即可刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新:</string>
+    <!-- 辅导讨论区页面 -->
+    <string name="coach_title">辅导讨论区</string>
+    <string name="coach_new_topic">发新帖</string>
+    <string name="coach_by_author">by&#160;</string>
+    <string name="coach_topicdetail_title">帖子详情</string>
+    <string name="coach_reply_topic">回复</string>
+    <string name="input_at_least_6_charector">请至少输入%d个字</string>
+    <string name="error_max_length">内容最多不能超过%d字符</string>
+    <string name="coach_topic_top">置顶</string>
+    <string name="coach_topic_top_cancle">取消置顶</string>
+    <string name="coach_topic_update">修改主贴</string>
+    <string name="coach_topic_delete">删除主贴</string>
+    <string name="coach_topic_reply_update">修改回复</string>
+    <string name="coach_topic_reply_delete">删除回复</string>
+    <string name="coach_teacher">课程辅导老师</string>
+    <string name="coach_title_max_length">标题最多不能超过%d字符</string>
+    <string name="coach_content_max_length">内容最多不能超过%d字符</string>
+    <string name="commit_question_success">提问成功，请到“我的提问”中查看</string>
+
+    <!-- 在线注册 -->
+    <string name="online_registration_header">在线报名</string>
+    <string name="online_registration_first_choose_location">请选择距离你最近的教学点</string>
+    <string name="online_registration_first_location_detail">教学点是你以后现场确认、入学考试和期末考试的地点</string>
+    <string name="online_registration_first_your_location">你现在位于:</string>
+    <string name="online_registration_first_teach_point_title">离你最近的教学点为:</string>
+    <string name="online_registration_first_teach_point_more">查看全部%d个教学点</string>
+    <string name="online_registration_first_teach_point_item_phone">电话:%s</string>
+    <string name="online_registration_first_teach_point_item_address">地址:%s</string>
+
+    <!-- 在线注册 2 -->
+    <string name="online_registration_second_waring">请输入报名的基础信息，3个工作日内将有招生办的老师与你联系！</string>
+    <string name="online_registration_second_major">报名专业:</string>
+    <string name="online_registration_second_name">姓名:</string>
+    <string name="online_registration_second_phone">电话:</string>
+    <string name="online_registration_second_teach_point">教学点:</string>
+
+    <!-- 与我相关 -->
+    <string name="relateme_title">与我相关</string>
+    <string name="delete_comment_info">清空</string>
+    <string name="no_relateme">暂无与我相关</string>
+
+    <!-- 动态详情 -->
+    <string name="timeline_title">动态正文</string>
+
+    <!-- 发动态 -->
+    <string name="playground_comment_but">发评论</string>
+    <string name="playground_dynamic_but">发动态</string>
+    <string name="playground_sending">正在发送...</string>
+    <string name="playground_null">请输入内容或选择至少一张图片</string>
+    <string name="playground_reply_comment_but">回复评论</string>
+    <string name="playground_send_but">发送</string>
+    <string name="playground_comment_et">写评论...</string>
+    <string name="playground_dynamic_et">说点什么吧...</string>
+    <string name="playground_reply_comment_et">回复李小平...</string>
+    <string name="coach_new_topic_title">发起提问</string>
+    <string name="coach_new_topic_send">发送</string>
+    <string name="coach_new_topic_title_hint">输入标题</string>
+    <string name="coach_new_topic_content_hint">输入内容</string>
+    <string name="coach_replay_topic_title">回复帖子</string>
+    <string name="coach_replay_topic_send">发送</string>
+    <string name="coach_replay_topic_default_title">默认标题</string>
+    <string name="coach_input_empty">请输入内容</string>
+    <string name="coach_send_success">发送成功</string>
+    <string name="playground_quit">放弃发布</string>
+    <string name="playground_continue_edit">继续编辑</string>
+
+    <string name="header_hint_refresh_normal">下拉可以刷新</string>
+    <string name="header_hint_refresh_ready">松开可以刷新</string>
+    <string name="header_hint_refresh_loading">正在刷新&#8230;</string>
+    <string name="header_hint_refresh_time">更新于：</string>
+    <string name="footer_hint_load_normal">查看更多</string>
+    <string name="footer_hint_load_ready">松开载入更多</string>
+    <string name="album_choose">从手机相册中选择</string>
+    <string name="photos_choose">拍照</string>
+    <string name="choose_files_tv">相册</string>
+
+    <!-- 编辑个人信息页面 -->
+    <string name="phone_num">手机号码</string>
+    <string name="visiable_teacher">(仅老师可见)</string>
+    <string name="visiable_friends">(好友可见)</string>
+    <string name="visiable_all">(所有人可见)</string>
+    <string name="edit_persioninfo_title">编辑个人信息</string>
+    <string name="edit_persioninfo_success">资料更新成功！</string>
+    <string name="edit_persioninfo_error">编辑个人信息失败</string>
+    <string name="edit_title_brithday">出生日期</string>
+    <string name="edit_title_company">公司信息</string>
+    <string name="edit_title_hobby">兴趣爱好</string>
+    <string name="edit_title_explanation">个人说明</string>
+    <string name="edit_birthday_tip">输入你的出生日期，系统会自动计算年龄和星座</string>
+    <string name="dlg_content">放弃对资料的修改?</string>
+    <string name="dlg_content_posbtn">继续编辑</string>
+    <string name="dlg_content_negbtn">放弃</string>
+    <string name="hint_edit_work">你在从事什么职业</string>
+    <string name="hint_edit_company">你曾经在哪些公司任职</string>
+    <string name="hint_edit_hobby">你喜欢做些什么，对什么有兴趣？</string>
+    <string name="hint_edit_explanation">关于你的更多说明</string>
+    <string name="text_empty">未填</string>
+    <string name="text_empty_star">未设置</string>
+    <string name="text_empty_work">你在从事什么职业</string>
+    <string name="text_empty_company">你曾经在哪些公司任职</string>
+    <string name="text_empty_school">你曾经在哪些学校就读</string>
+    <string name="text_empty_hobby">你喜欢做些什么,对什么感兴趣？</string>
+    <string name="text_empty_explanation">关于你的更多说明</string>
+    <string name="text_empty_explanation2">暂无说明</string>
+
+    <!-- 答疑详情页面 -->
+    <string name="course_question_title">答疑详情</string>
+    <string name="text_new_question">&#160;发起提问&#160;</string>
+    <string name="course_link">关联&#160;:&#160;</string>
+    <string name="text_ignore_question">该问题与课程无关，已被系统忽略</string>
+    <!-- 发起提问页面 -->
+    <string name="course_new_question_title">发起提问</string>
+    <string name="course_new_question_content_hint">一句话描述你的疑问</string>
+    <string name="input_at_least_6_title">请输入至少6个字的标题</string>
+    <string name="input_at_least_5_content">请输入至少5个字的内容</string>
+    <!-- 下载  -->
+    <string name="go_local_courseware">去本地课件</string>
+    <string name="video_menu_download_ok">确认下载</string>
+    <string name="video_menu_download_pause">暂停下载</string>
+    <string name="video_menu_download_resume">继续下载</string>
+    <string name="downloadmanage_download_resume">继续</string>
+    <string name="downloadmanage_download_pause">暂停</string>
+    <string name="download_no_data">没有下载任务，可以去本地课件查看已下载课程</string>
+    <string name="download_no_data_teacher">没有下载任务</string>
+    <string name="download_useless_url">无效的视频路径</string>
+    <string name="downloading">该课件已在下载中...</string>
+    <string name="video_exist">该课件已存在</string>
+    <string name="download_memory_shortage">抱歉，内存不足无法下载</string>
+
+    <string name="download_error">下载发生错误</string>
+    <string name="download_shortage_error">存储空间不足</string>
+
+    <!-- 游客进入 -->
+    <string name="permission_not_granted">该功能暂不对游客开放，开大用户请登录后继续。</string>
+    <string name="visitor">游客</string>
+    <string name="teacher">老师</string>
+    <string name="tips">提示:</string>
+    <string name="fjou_user_login">开大用户登录</string>
+
+    <!-- im-添加好友界面 -->
+    <string name="im_personadd_title">添加朋友</string>
+    <string name="add_newfriend_title">新的朋友</string>
+    <string name="im_search_text">搜索</string>
+    <string name="user_search_text">沟通从聊天开始\n聊天从好友开始</string>
+    <string name="im_search_users">相关用户:</string>
+    <!-- im-搜索好友界面 -->
+    <string name="im_search_all_follow">搜索全部关注</string>
+    <string name="im_search_all_fans">搜索全部粉丝</string>
+    <string name="im_search_title">搜索</string>
+    <string name="im_search_hint">通过姓名查找</string>
+    <string name="im_result_empty_text">未找到用户</string>
+    <string name="im_empty_error">请输入姓名</string>
+    <string name="im_empty_zero">请勿输入0进行搜索</string>
+    <string name="im_add_result_success">添加成功</string>
+    <string name="im_add_result_error_add">添加好友失败</string>
+    <string name="im_add_result_error_exist">已成为好友</string>
+    <string name="im_add_result_error_self">不能添加自己为好友哦</string>
+    <string name="im_add_result_error_undefined">网络故障</string>
+
+    <!-- 群组列表 -->
+    <string name="im_no_group_list">您暂未加入任何群组</string>
+    <!-- im-聊天设置  -->
+    <string name="im_talk_setting">聊天设置</string>
+    <string name="im_talk_setting_group">群组名称</string>
+    <string name="im_talk_setting_group_num">群组成员数</string>
+    <string name="im_talk_setting_group_ren">人</string>
+    <string name="im_talk_setting_top">置顶聊天</string>
+    <string name="im_talk_setting_new_msg">新消息通知</string>
+    <string name="im_talk_setting_record">查看聊天记录</string>
+    <string name="im_talk_setting_clear_record">清空聊天记录</string>
+    <string name="im_talk_setting_btn">删除并退出</string>
+    <string name="im_talk_setting_personal">个人信息</string>
+    <string name="im_talk_setting_history_clean">已清空聊天记录</string>
+
+    <!--下载 -->
+    <string name="download_no_sdcard">SD卡不存在</string>
+    <string name="download_finished">软件已下载过，可以直接安装啦</string>
+    <!-- 视频模块 -->
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <!-- 主页 -->
+    <string name="shap_exam">形考作业</string>
+    <string name="message">消息</string>
+    <string name="mine">我的</string>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/myeditschool_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:id="@+id/myeditschool_university_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:layout_below="@id/myeditschool_head_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/white_item_bg" >
+		<TextView
+	        android:id="@+id/myeditschool_university_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/_60px"
+	        android:layout_margin="10dp"
+	        android:gravity="center_vertical"
+	        android:text="大学"
+	        android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/myeditschool_university_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:layout_toRightOf="@+id/myeditschool_university_tv"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myeditschool_seniormiddleschool_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:layout_below="@id/myeditschool_university_rl"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/white_item_bg" >
+		<TextView
+	        android:id="@+id/myeditschool_seniormiddleschool_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/_60px"
+	        android:layout_margin="10dp"
+	        android:gravity="center_vertical"
+	        android:text="高中"
+	        android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/myeditschool_seniormiddleschool_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:layout_toRightOf="@+id/myeditschool_seniormiddleschool_tv"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/myeditschool_juniormiddleschool_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:layout_below="@id/myeditschool_seniormiddleschool_rl"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/white_item_bg" >
+		<TextView
+	        android:id="@+id/myeditschool_juniormiddleschool_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/_60px"
+	        android:layout_margin="10dp"
+	        android:gravity="center_vertical"
+	        android:text="初中"
+	        android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/myeditschool_juniormiddleschool_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/myeditschool_juniormiddleschool_tv"
+            android:background="@null"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:id="@+id/myeditschool_primaryschool_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:layout_below="@id/myeditschool_juniormiddleschool_rl"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/white_item_bg" >
+		<TextView
+	        android:id="@+id/myeditschool_primaryschool_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/_60px"
+	        android:layout_margin="10dp"
+	        android:gravity="center_vertical"
+	        android:text="小学"
+	        android:textColor="@color/black" />
+        <EditText
+            android:id="@+id/myeditschool_primaryschool_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:layout_toRightOf="@+id/myeditschool_primaryschool_tv"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

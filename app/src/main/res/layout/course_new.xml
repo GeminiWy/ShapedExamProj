@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white">
+
+        <include
+                android:id="@+id/course_actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_72px"
+                layout="@layout/common_main_head_new_layout" />
+
+        <include
+                android:id="@+id/course_student_info"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/course_actionbar"
+                layout="@layout/course_student_info" />
+
+        <RelativeLayout
+                android:id="@+id/course_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/course_student_info"
+                android:background="@color/white">
+
+            <TextView
+                    android:id="@+id/course_on_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="在修课程"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/course_text"
+                    android:textSize="18dp" />
+
+            <View
+                    android:id="@+id/view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/course_on_tv"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/course_divider" />
+
+            <ImageView
+                    android:id="@+id/course_arrow_iv"
+                    android:layout_width="12dp"
+                    android:layout_height="7dp"
+                    android:layout_below="@+id/course_on_tv"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/arrow_course_up" />
+
+            <view
+                    android:id="@+id/course_count_bg"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignTop="@+id/course_on_tv"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/course_on_tv"
+                    class="com.tming.openuniversity.view.CircularImage" />
+
+            <TextView
+                    android:id="@+id/course_count_tv"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignLeft="@+id/course_count_bg"
+                    android:layout_alignTop="@+id/course_count_bg"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+            <com.tming.common.view.RefreshableListView
+                    android:id="@+id/course_learning_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/view"
+                    android:layout_marginTop="0dp"
+                    android:divider="@android:color/white"
+                    android:dividerHeight="8dp"
+                    >
+            </com.tming.common.view.RefreshableListView>
+
+            <include
+                    android:id="@+id/network_unable_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_72px"
+                    layout="@layout/network_unable_view" />
+            <include
+                    android:id="@+id/nocourse_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_72px"
+                    layout="@layout/nocourse_tip" />
+            <include
+                    android:id="@+id/loading_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_72px"
+                    layout="@layout/loading_view" />
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/course_dowork_iv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/course_err_iv"
+                android:layout_alignTop="@+id/course_err_iv"
+                android:layout_marginRight="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/course_text"
+                android:text="@string/do_homework"
+                android:textSize="15dp"
+                android:gravity="center_vertical|right"
+                android:background="@drawable/dowork_selector"
+                android:scaleType="fitCenter" />
+
+        <TextView
+                android:id="@+id/course_err_iv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/course_rl"
+                android:layout_alignTop="@+id/course_rl"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:paddingRight="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/course_text"
+                android:text="@string/error_set"
+                android:gravity="center_vertical|right"
+                android:background="@drawable/error_set_selector"
+                android:scaleType="fitCenter" />
+
+        <!--
+             <include
+                android:id="@+id/course_bottom_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height"
+                android:layout_alignParentBottom="true"
+                layout="@layout/maintab_activity" />
+        -->
+
+
+</RelativeLayout>

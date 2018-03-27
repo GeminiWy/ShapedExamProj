@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 课程详情页-课程简介 -->
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg"
+        android:scrollbars="none"
+        android:padding="10dp">
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 课程名称 -->
+            <TextView 
+                android:id="@+id/course_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="" />
+            <LinearLayout 
+                android:id="@+id/num_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/course_title"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal">
+                <!-- 学分 -->
+	            <TextView 
+	                android:id="@+id/course_dec_score_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/light_black"
+	                android:text="@string/score"/>
+	            <TextView 
+	                android:id="@+id/course_dec_score"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/light_black"
+	                android:text=""/>
+	            <View 
+	                android:layout_width="1dp"
+	                android:layout_height="15dp"
+	                android:background="@color/black"
+	                android:layout_marginLeft="5dp"
+	               	android:layout_gravity="bottom"
+	               	android:visibility="gone"
+	                android:layout_marginRight="5dp"/>
+	            <!-- 课时 -->
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+	                android:visibility="gone"
+	                android:text="@string/period"/>
+	            <TextView 
+	                android:id="@+id/course_dec_period"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+	                android:visibility="gone"
+	                android:text=""/>
+	            <View 
+	                android:layout_width="1dp"
+	                android:layout_height="15dp"
+	                android:background="@color/black"
+	                android:layout_marginLeft="5dp"
+	                android:layout_gravity="bottom"
+	                android:visibility="gone"
+	                android:layout_marginRight="5dp"/>
+	            <!-- 在修学员数 -->
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+	                android:visibility="gone"
+	                android:text="@string/student_num"/>
+	            <TextView 
+	                android:id="@+id/course_dec_student_num"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/black"
+	                android:visibility="gone"
+	                android:text=""/>
+	            
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/head_teacher_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/num_lay"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+                <!-- 责任老师 -->
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/light_black"
+	                android:text="@string/head_teacher"/>
+                <LinearLayout
+	                android:id="@+id/course_dec_head_teacher_ll"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+                </LinearLayout>
+	            <!-- <TextView
+	                android:id="@+id/course_dec_head_teacher"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/title_green"
+	                android:text=""/> -->
+	            
+	            
+	            
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/course_teacher_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head_teacher_lay"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+	            <!-- 课程辅导老师-->
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/light_black"
+	                android:text="@string/course_teacher"/>
+	            <LinearLayout 
+	                android:id="@+id/course_dec_course_teacher_ll"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal">
+	                
+	            </LinearLayout>
+	            <!-- <TextView 
+	                android:id="@+id/course_dec_course_teacher"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/title_green"
+	                android:text=""/> -->
+            </LinearLayout>
+            <!-- 简介内容 -->
+            <TextView 
+                android:id="@+id/course_describe_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/course_teacher_lay"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="5dp"
+                android:text=""/>
+            
+        </RelativeLayout>
+    </ScrollView>
+    <include 
+	    android:id="@+id/error_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+	    layout="@layout/error_view"/>
+	<include 
+	    android:id="@+id/loading_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+	    layout="@layout/loading_view"/>
+</RelativeLayout>

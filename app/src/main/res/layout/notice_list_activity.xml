@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <include
+        android:id="@+id/notice_list_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_head_layout_1" />
+
+    <!-- 系统公告列表 -->
+
+    <com.tming.common.view.RefreshableListView
+        android:id="@+id/notice_list_relv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notice_list_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none" />
+    
+	<!-- 列表为空提示 -->
+    <TextView 
+        android:id="@+id/no_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/light_black"
+        android:text="@string/notice_list_empty"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    
+    <!-- 网络指示标 -->
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通讯录 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <!-- 顶部标题 ，背景设置为透明 -->
+
+    <!-- <include
+        android:id="@+id/roster_list_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_head_layout_1" /> -->
+
+    <RelativeLayout
+        android:id="@+id/roster_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/roster_list_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/roster_list_searchicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:src="@drawable/classroom_icon_search" />
+
+        <EditText
+            android:id="@+id/search_keyword"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/communication_list_searchicon"
+            android:background="@null" />
+    </RelativeLayout>
+
+    <!-- 群组列表 -->
+
+    <com.tming.common.view.RefreshableListView
+        android:id="@+id/msg_roster_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/roster_search_layout"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:scrollbars="none"
+        android:background="@color/white" />
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/roster_search_layout">
+		<LinearLayout
+	        android:id="@+id/roster_number_ll"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	    </LinearLayout>
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/no_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:textColor="@color/light_black"
+        android:text="@string/msg_no_friends"
+        android:layout_centerInParent="true"/>
+    
+    <!-- 网络指示标 -->
+    
+    <include 
+	    android:id="@+id/loading_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+	    layout="@layout/loading_view"/>
+    
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/classroom_icon_kj_circle" android:state_pressed="true"/>
+    <!-- 普通无焦点状态 -->
+    <item android:drawable="@drawable/classroom_icon_kj_circle" android:state_focused="false" android:state_pressed="false"/>
+
+</selector>

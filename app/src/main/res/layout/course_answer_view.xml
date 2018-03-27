@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg" >
+    <!-- 自定义可刷新的列表 -->
+    <com.tming.common.view.RefreshableListView 
+        android:id="@+id/refreshable_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent" >
+        
+    </com.tming.common.view.RefreshableListView>
+    
+    <include 
+	    android:id="@+id/error_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+	    layout="@layout/error_view"/>
+	<include 
+	    android:id="@+id/loading_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+	    layout="@layout/loading_view"/>
+</RelativeLayout>

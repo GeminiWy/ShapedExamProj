@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg" 
+    android:orientation="vertical" >
+      
+     <include
+        android:id="@+id/course_question_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical" 
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/course_question_introduce_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/course_answers"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_27px"
+            android:textStyle="bold" />
+    </LinearLayout>
+  
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"   
+        android:orientation="vertical" 
+        > 
+        <com.tming.common.view.RefreshableListView   
+            android:id="@+id/course_question_list_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/common_bg" 
+            android:divider="@null" 
+            android:scrollbars="none"/> 
+                    
+         <include
+	        android:id="@+id/loading_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="@dimen/_72px"
+	        layout="@layout/loading_view" />  
+	        
+		 <include
+	        android:id="@+id/error_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        layout="@layout/error_view"
+	        android:visibility="gone" />
+    </LinearLayout> 
+
+</LinearLayout>

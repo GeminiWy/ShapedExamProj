@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+            android:id="@+id/doing_homework_frame_title_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/doing_homework_head_lay">
+        <TextView
+                android:id="@+id/doing_homework_frame_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/doing_homework_title_text"
+                android:text="一、选择题(15题/15分)"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#CFCFCF"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/doing_homework_frame_content_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/doing_homework_frame_bottom_lay"
+            android:layout_below="@id/doing_homework_frame_title_lay">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

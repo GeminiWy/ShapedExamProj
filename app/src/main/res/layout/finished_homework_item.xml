@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content">
+    <RelativeLayout 
+        android:id="@+id/homework_item_rl"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content"
+	    android:background="@color/white">
+		<com.tming.openuniversity.view.ScrollableTextView
+		    android:id="@+id/tv_homework_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="45dp"
+		    android:gravity="center_vertical"
+		    android:text=""
+		    android:layout_alignParentLeft="true"
+		    android:textColor="@color/black"
+		    style="@style/TVMarqueeStyle"
+		    android:layout_toLeftOf="@+id/tv_homework_score"
+		    android:textSize="16dp"
+		    android:paddingLeft="10dp" />
+		<TextView 
+		    android:id="@+id/tv_homework_score"
+		    android:layout_width="wrap_content"
+		    android:layout_height="45dp"
+		    android:gravity="center_vertical"
+		    android:text=""
+		    android:textSize="15dp"
+		    android:paddingRight="10dp"
+		    android:layout_alignParentRight="true" />
+	</RelativeLayout>
+</LinearLayout>

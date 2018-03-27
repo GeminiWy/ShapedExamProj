@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@color/white">
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/border_color" android:layout_below="@+id/toolbar_ll"
+            android:id="@+id/seperate_line"/>
+    <android.support.v4.view.ViewPager
+            android:id="@+id/playground_search_result_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/seperate_line"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:flipInterval="30"
+            android:persistentDrawingCache="scrolling" />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_70px" android:id="@+id/bg_img_ll" android:gravity="center">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70px"
+                android:id="@+id/bg_1" android:src="@drawable/wb_searchbg_on" android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70px"
+                android:id="@+id/bg_2" android:src="@drawable/wb_searchbg_on" android:layout_weight="1"
+                android:scaleType="fitCenter" android:paddingLeft="10dp" android:paddingRight="10dp"
+                android:paddingTop="5dp" android:paddingBottom="5dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70px"
+                android:id="@+id/bg_3" android:src="@drawable/wb_searchbg_on" android:layout_weight="1"
+                android:scaleType="fitCenter" android:paddingLeft="10dp" android:paddingRight="10dp"
+                android:paddingTop="5dp" android:paddingBottom="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70px"
+            android:id="@+id/toolbar_ll">
+
+        <TextView
+                android:id="@+id/course_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/playgroung_searchresult_course"
+                android:textColor="@color/playgorund_search_tabtext_selectcolor"
+                android:textSize="18dp" />
+
+        <TextView
+                android:id="@+id/user_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/playgroung_searchresult_users"
+                android:textColor="@color/playgorund_search_tabtext_normalcolor"
+                android:textSize="18dp" />
+
+        <TextView
+                android:id="@+id/timeline_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/playgroung_searchresult_timeline"
+                android:textColor="@color/playgorund_search_tabtext_normalcolor"
+                android:textSize="18dp" />
+    </LinearLayout>
+
+</RelativeLayout>

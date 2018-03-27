@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nd.shapedexamproj">
+
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService">
+        </service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <meta-data android:value="539020f856240ba02e00e111" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="kdAndroid" android:name="UMENG_CHANNEL"/>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenLayout"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.MainTabActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.MONKEY"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity android:name="com.nd.shapedexamproj.activity.homework.DoingHomeworkActivity"
+            android:configChanges="orientation|navigation|screenLayout"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"/>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.homework.DoingWrongHomeworkActivity"
+            android:configChanges="orientation|navigation|screenLayout"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"/>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.shapedexam.ShapeExamTaskList"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.shapedexam.AnswerRecordDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.shapedexam.WarmupExamActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.shapedexam.ShapeExamAnswerHistory"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.shapedexam.ShapeExamDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.shapedexam.DoingTaskActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.shapedexam.DoingWarmupActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.ListenCourseActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.PlayHistoryActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.PersonalActivity"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.EditPersonalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.SetTimeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.SetPhoneActivity"
+            android:label="@string/app_name"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.MyQuestionsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.MyScoreActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.MyPaymentActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.MyNoteActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.ErrorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CourseListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.ClassContactActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.ShowPersonalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.AboutActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.ImagePagerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.homework.FinishedHomeworkActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity android:name="com.nd.shapedexamproj.activity.homework.FinishedHomeworkDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"/>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.homework.ImportCoursewareActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CourseDetailActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|navigation|screenSize|layoutDirection"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.major.MajorDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.GroupListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.notice.NoticeListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.notice.NoticeDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.remind.MyRemindActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.homework.HomeworkListActivityV2"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.SettingActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.more.BlacklistActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.more.FeedbackActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.MyFlowerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.PersonalDynamicsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.homework.HomeworkDetailActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.BindingPhoneActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.SetImageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.SetWorkActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.SetSchoolActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.SetCompanyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.ExamActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.QuestionDetail"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.plaza.TimelineActivityV2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <!-- Don't forgot InitActivity -->
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.GuideActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.search.PlaygroundSearchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            >
+        </activity>
+        <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        -->
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CoachDiscListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CoachTopicDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.inner.Registration"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.inner.RegistrationSecond"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.inner.RegistrationResult"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CoachNewTopicActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CoachReplyTopicActivty"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.plaza.PlaygroundRelatemeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.plaza.PlaygroundSendCommentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.plaza.PlaygroundSendTrendsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.view.myphoto.PhotoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.view.myphoto.ImageGridActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CourseQuestionDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CourseNewQuestionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.my.NoteDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.downloadmanage.DownloadManagerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.PersonSearchActicity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.ContactPersonAddActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.NewFriendsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.ChatActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.ChatGroupActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.CheckAllStudyResourceActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.IMSingleChatSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="com.nd.shapedexamproj.activity.im.IMRoomChatSettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+
+        <activity
+            android:name="com.nd.shapedexamproj.activity.course.CourseQuestionListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar">
+        </activity>
+        <activity android:name="com.nd.shapedexamproj.activity.course.SelectCourseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleBar"/>
+
+        <service
+            android:name="com.tming.common.download.service.DownloadService"
+            android:process=":download"/>
+    </application>
+
+</manifest>

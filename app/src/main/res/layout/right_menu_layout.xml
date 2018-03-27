@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tming.openuniversity.view.RightMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slidemenudemo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_right_layout"
+    android:layout_width="270dp"
+    android:layout_height="match_parent"
+    slidemenudemo:layout_role="secondaryMenu"
+    android:background="@color/common_bg" >
+    
+
+</com.tming.openuniversity.view.RightMenuLayout>

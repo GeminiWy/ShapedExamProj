@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/common_bg"
+    android:orientation="vertical"> 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_110px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dip" >
+
+            <TextView
+                android:id="@+id/specialty_introduce_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/search_by_specialty"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_30px" />
+
+            <TextView
+                android:id="@+id/specialty_years_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_specialty_years"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_21px" />
+
+            <TextView
+                android:id="@+id/specialty_credits_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_course_credits"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_21px" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/specialty_arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dip"
+            android:src="@drawable/list_arrowright2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/search_line_bg" />  
+
+</LinearLayout>

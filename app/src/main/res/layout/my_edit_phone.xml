@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+    <include
+        android:id="@+id/myeditphone_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:id="@+id/myeditphone_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_60px"
+        android:layout_below="@id/myeditphone_head_layout"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_item_bg" >
+
+        <EditText
+            android:id="@+id/myeditphone_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:inputType="phone"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/myeditphone_x_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login_x" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myeditphone_teacher_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myeditphone_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <Button
+            android:id="@+id/myeditphone_teacher_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/classroom_icon_radio1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/myeditphone_teacher_btn"
+            android:text="仅老师可见"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/myeditphone_line_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/myeditphone_teacher_btn"
+            android:layout_marginTop="10dp"
+            android:background="@color/list_seperator_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myeditphone_friend_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myeditphone_teacher_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/myeditphone_friend_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/classroom_icon_radio1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/myeditphone_friend_btn"
+            android:text="好友可见"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/myeditphone_line2_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/myeditphone_friend_btn"
+            android:layout_marginTop="10dp"
+            android:background="@color/list_seperator_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myeditphone_all_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myeditphone_friend_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/myeditphone_all_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/classroom_icon_radio1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/myeditphone_all_btn"
+            android:text="所有人可见"
+            android:textColor="@color/black" />
+
+        <View
+            android:id="@+id/myeditphone_line3_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/myeditphone_all_btn"
+            android:layout_marginTop="10dp"
+            android:background="@color/list_seperator_bg" />
+    </RelativeLayout>
+
+</RelativeLayout>

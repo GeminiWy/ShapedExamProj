@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- 加载图 
+    -->
+    <com.tming.common.view.LoadingView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loading_layout"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/transparent">
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="17dip"
+            android:layout_height="17dip"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@anim/start_page_progressbar" />
+
+        <TextView
+            android:id="@+id/loading_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:text="@string/loading"
+            android:textColor="@color/white" >
+        </TextView>
+    </com.tming.common.view.LoadingView>
+

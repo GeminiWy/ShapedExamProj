@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/playground_list_dialog_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/playground_list_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_64px"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/playground_list_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18px"
+            android:text="操作"
+            android:textColor="@color/playground_list_title_bg"
+            android:textSize="@dimen/_27px" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/playground_list_title_delive"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_3px"
+        android:layout_centerVertical="true"
+        android:background="@color/playground_list_title_bg" />
+
+    <LinearLayout
+        android:id="@+id/playground_list_comment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/playground_list_comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18px"
+            android:text="评论"
+            android:textColor="@color/playground_list_content_bg"
+            android:textSize="@dimen/_21px" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/playground_list_comment_delive"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_2px"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:background="@color/playground_list_line_bg" />
+
+    <LinearLayout
+        android:id="@+id/playground_person_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/playground_person_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18px"
+            android:text="查看个人信息"
+            android:textColor="@color/playground_list_content_bg"
+            android:textSize="@dimen/_21px" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/playground_person_info_delive"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_2px"
+        android:layout_centerVertical="true"
+        android:background="@color/playground_list_line_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/playground_set_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/playground_set_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_18px"
+            android:text="置顶"
+            android:textColor="@color/playground_list_content_bg"
+            android:textSize="@dimen/_21px" />
+    </LinearLayout>
+
+</LinearLayout>

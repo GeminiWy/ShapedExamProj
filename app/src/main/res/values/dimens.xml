@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="course_name_height">40dp</dimen>
+	
+	<!-- 像素px转dp -->
+	<dimen name="_2px">1dp</dimen>
+	<dimen name="_3px">2dp</dimen>
+	<dimen name="_6px">4dp</dimen>
+	<dimen name="_10px">7dp</dimen>
+	<dimen name="_16px">11dp</dimen>
+	<dimen name="_18px">12dp</dimen>
+	<dimen name="_20px">13dp</dimen>
+	<dimen name="_21px">14dp</dimen>
+	<dimen name="_24px">16dp</dimen>
+	<dimen name="_27px">18dp</dimen>
+	<dimen name="_30px">20dp</dimen>
+	<dimen name="_34px">23dp</dimen>
+	<dimen name="_36px">24dp</dimen>
+	<dimen name="_40px">27dp</dimen>
+	<dimen name="_44px">29dp</dimen>
+	<dimen name="_46px">31dp</dimen>
+	<dimen name="_54px">36dp</dimen>
+	<dimen name="_56px">37dp</dimen>
+	<dimen name="_60px">40dp</dimen>
+	<dimen name="_64px">43dp</dimen>
+	<dimen name="_66px">44dp</dimen>
+	<dimen name="_68px">45dp</dimen>
+	<dimen name="_70px">47dp</dimen>
+	<dimen name="_72px">48dp</dimen>
+	<dimen name="_76px">50dp</dimen>
+	<dimen name="_78px">52dp</dimen>
+	<dimen name="_81px">54dp</dimen>
+	<dimen name="_82px">55dp</dimen>
+	<dimen name="_90px">60dp</dimen>
+	<dimen name="_92px">61dp</dimen>
+	<dimen name="_100px">68dp</dimen>
+	<dimen name="_110px">70dp</dimen>
+	<dimen name="_111px">72dp</dimen>
+	<dimen name="_120px">80dp</dimen>
+	<dimen name="_134px">89dp</dimen>
+	<dimen name="_153px">102dp</dimen>
+	<dimen name="_225px">150dp</dimen>
+	<dimen name="_264px">176dp</dimen>
+	<dimen name="_345px">230dp</dimen>
+	<dimen name="_384px">256dp</dimen>
+	
+	
+	<dimen name="guide_pic_height">300dp</dimen>
+    <dimen name="teacher_course_title_height">58.66667dp</dimen>
+    <dimen name="teacher_course_listview_item_height">55dp</dimen>
+    <dimen name="teacher_classes_listview_item_height">80dp</dimen>
+    <dimen name="teacher_course_listview_height">220dp</dimen>
+    
+    <dimen name="space_3">3.0dip</dimen>
+    <dimen name="space_1">1.0dip</dimen>
+    
+    <dimen name="text_size_10">10.0dip</dimen>
+    
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+	
+    <dimen name="pop_item_height">40dp</dimen>
+    <dimen name="chat_head_img_size">45dp</dimen>
+    <dimen name="chat_text_size">17dp</dimen>
+    <dimen name="common_timeline_item_small_image_size">72dp</dimen>
+	<dimen name="common_timeline_item_big_image_default_height">100dp</dimen>
+	<dimen name="common_timeline_item_big_image_max_width">350dp</dimen>
+	<dimen name="common_timeline_item_big_image_max_height">150dp</dimen>
+</resources>

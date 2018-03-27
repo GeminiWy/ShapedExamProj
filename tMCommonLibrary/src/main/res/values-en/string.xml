@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--崩溃对话框 -->
+    <string name="crash_dialog_title">Sorry, the program is abnormal.</string>
+    <string name="crash_dialog_exit_text">Exit</string>
+    <string name="crash_dialog_restart_text">Restart</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <com.tming.openuniversity.view.plaza.ShowCommentListView
+        android:id="@+id/comment_list_LV"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/timeline_detial_not_item_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+    </com.tming.openuniversity.view.plaza.ShowCommentListView>
+
+
+</RelativeLayout>

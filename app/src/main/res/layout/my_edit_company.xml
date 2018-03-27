@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/myeditcompany_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:id="@+id/myeditcompany_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myeditcompany_head_layout"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/myeditcompany_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:hint="你曾经在哪些公司任职"
+            android:gravity="top"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

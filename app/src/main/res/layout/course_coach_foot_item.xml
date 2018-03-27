@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <View 
+		    android:layout_width="match_parent"
+		    android:layout_height="0.5dp"
+		    android:layout_alignTop="@+id/course_detail_coach_ll"
+		    android:background="@color/border_color"/>
+    <LinearLayout
+        android:id="@+id/course_detail_coach_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:layout_alignParentBottom="true" 
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+		
+        <TextView
+            android:id="@+id/course_detail_coach_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/course_name_height"
+            android:gravity="center"
+            android:text="查看所有"
+            android:textColor="@color/light_black" />
+    </LinearLayout>
+	
+</RelativeLayout>

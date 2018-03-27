@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_110px" >
+
+        <RelativeLayout
+            android:id="@+id/msg_fragment_item_img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/msg_fragment_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_notice_icon"
+                android:visibility="gone"/>
+
+            <com.tming.openuniversity.view.CircularImage
+                android:id="@+id/msg_fragment_item_img_photo"
+                android:layout_width="@dimen/_72px"
+                android:layout_height="@dimen/_72px"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/msg_fragment_item_img_base"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/msg_avatar_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/msg_fragment_item_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/msg_fragment_item_img_layout"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/msg_fragment_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/msg_fragment_item_time"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px" />
+
+            <TextView
+                android:id="@+id/msg_fragment_item_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msg_fragment_item_name"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/chat_text_size" />
+
+            <TextView
+                android:id="@+id/msg_fragment_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_18px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

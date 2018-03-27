@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 消息主界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <!-- 顶部标题 ，背景设置为透明 -->
+
+    <include
+        android:id="@+id/msg_fragment_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_head_layout_msg" />
+
+    <com.tming.openuniversity.view.ScrollDisableViewPager
+        android:id="@+id/msg_fragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/msg_fragment_head"/>
+    
+</RelativeLayout>

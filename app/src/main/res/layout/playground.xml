@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+
+	<RelativeLayout 
+	    android:id="@+id/playground_sub_head_rl"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:background="@color/title_green"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <RelativeLayout
+            android:id="@+id/announcement_type_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_72px"
+            android:visibility="gone"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/announcement_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的教学点"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignBottom="@id/announcement_type_tv"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/announcement_type_tv"
+                android:src="@drawable/playground_icon_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/announcement_operate_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_72px"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/announcement_type_rl"
+            android:gravity="center_vertical" >
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/white"
+			    android:layout_centerInParent="true"
+			    android:textSize="20dp"
+			    android:text="@string/playground"/>
+            <ImageView
+                android:id="@+id/posttimeline_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/playground_icon_pen" />
+
+            <ImageView
+                android:id="@+id/msg_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/posttimeline_iv"
+                android:src="@drawable/playground_icon_mail" />
+        </RelativeLayout>
+	</RelativeLayout>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/playground_sub_head_rl">
+        <com.tming.common.view.RefreshableListView
+                android:id="@+id/playground_timeline_list"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/playground_head_rl"
+                android:background="@color/common_bg"
+                android:divider="#00000000"
+                android:listSelector="@color/transparent"
+                android:cacheColorHint ="@color/transparent"
+                android:layout_marginTop="@dimen/_72px">
+        </com.tming.common.view.RefreshableListView>
+        <RelativeLayout
+                android:id="@+id/playground_head_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_72px"
+                android:background="@color/common_bg" >
+
+            <EditText
+                    android:id="@+id/playground_search_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_46px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_10px"
+                    android:layout_marginRight="@dimen/_10px"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:background="@drawable/playground_search_bg" />
+
+            <LinearLayout
+                    android:id="@+id/playground_search_hint_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_46px"
+                    android:layout_alignLeft="@+id/playground_search_et"
+                    android:layout_centerVertical="true"
+                    android:gravity="center" >
+
+                <ImageView
+                        android:id="@+id/playground_search_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/playground_icon_search" />
+
+                <TextView
+                        android:id="@+id/playground_search_hint_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_46px"
+                        android:gravity="center_vertical"
+                        android:text="@string/playground_search_hint"
+                        android:textColor="@color/text_gray" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_72px"
+        layout="@layout/loading_view" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+    
+    <include 
+        android:id="@+id/error_question_head_layout"
+        layout="@layout/common_header"
+        />
+    
+    <TextView
+        android:id="@+id/error_question_title_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/error_question_head_layout"
+        android:layout_margin="10dp"
+        android:text="提示：错题重做仅用于个人复习，不重复统计到作业评分里面。"
+        android:textColor="@color/light_black"
+        android:textSize="14sp" />
+
+    <com.tming.common.view.RefreshableListView
+        android:id="@+id/error_question_lv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/error_question_title_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="1dp"
+        android:divider="@color/line_bg"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="#00000000" />
+	
+    <TextView 
+        android:id="@+id/error_question_nodata_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:textColor="@color/light_black"
+        android:text="@string/no_error_question"
+        android:visibility="gone"/>
+    
+</RelativeLayout>

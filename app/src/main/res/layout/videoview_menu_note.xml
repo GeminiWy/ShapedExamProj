@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/videoview_menu_note_nonote_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="你还没对该课件记录笔记！"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/videoview_menu_note_speaking_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/videoview_menu_note_speaking_pb"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_round" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/videoview_menu_note_speaking_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/msg_micro_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/videoview_menu_note_speaking_iv"
+                android:layout_centerHorizontal="true"
+                android:text="手指上滑\n取消发送"
+                android:textColor="@color/light_black"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/videoview_menu_note_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60dp" >
+
+        <TextView
+            android:id="@+id/videoview_menu_note_mynote_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="我的笔记"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/videoview_menu_note_line_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/videoview_menu_note_mynote_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/list_seperator_bg" />
+
+        <ListView
+            android:id="@+id/videoview_menu_note_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoview_menu_note_line_tv"
+            android:cacheColorHint="#00000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0d0c0c"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/videoview_menu_note_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@color/title_green"
+            android:text="按住说话记录笔记"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/videoview_menu_note_playing_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/mediacontroller_bg"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/videoview_menu_note_playing_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/progress_round" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:id="@+id/videoview_menu_note_playing_iv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/msg_micro_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/videoview_menu_note_playing_iv"
+                    android:layout_centerHorizontal="true"
+                    android:text="取消播放"
+                    android:textColor="@color/light_black"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/videoview_menu_note_totaltime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/videoview_menu_note_playing_rl"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

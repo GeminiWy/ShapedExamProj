@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 查看放大的图片 -->
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_height="match_parent" android:layout_width="match_parent">
+     <com.tming.common.view.TouchImageView
+         android:layout_height="match_parent" android:layout_width="match_parent"
+         android:id="@+id/pop_image" android:background="#aa000000"/>
+     <ZoomControls 
+         android:id="@+id/zoom_controler" android:layout_height="wrap_content"
+         android:layout_width="fill_parent" android:layout_gravity="bottom" 
+         android:gravity="right"/>
+</FrameLayout>

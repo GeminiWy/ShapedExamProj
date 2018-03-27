@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#333333</color>
+    <!-- 淡黑色字体 -->
+    <color name="light_black">#888888</color>
+    <color name="left_menu_gray">#666666</color>
+    <color name="title_green">#23bd8b</color>
+    <color name="common_bg">#efefef</color>
+    <color name="border_color">#dbdbdb</color>
+    <color name="text_gray">#ffa4a4a4</color>
+    <color name="divider_bg">#EAEAEA</color>
+    <!-- 视频模块 -->
+    <color name="mediacontroller_bg">#99000000</color>
+    <color name="video_point">#edff53</color>
+    <!-- 弹出框 -->
+    <color name="popup_item_pressed">#aaffffff</color>
+    <!-- 左抽屉 -->
+    <color name="left_bg_gray">#F4F4F4</color>
+    <color name="clarity_bg">#00000000</color>
+    <!-- 课堂页 -->
+    <color name="btn_pressed_gray">#F7F7F7</color>
+    <color name="course_student_text">#23bd8b</color>
+    <color name="course_white">#ffffff</color>
+    <color name="course_text">#666</color>
+    <color name="course_title_text">#000</color>
+    <color name="course_detail_text">#999</color>
+    <color name="course_divider">#d7d7d7</color>
+    <!-- 本地课件 -->
+    <color name="pink">#FE8585</color>
+    <color name="blue">#85B5E6</color>
+
+    <!-- IM聊天界面 颜色设置 -->
+    <color name="msg_head_contact_text">#A4A4A4</color>
+    <color name="chat_titile_bg">#128a52</color>
+    <color name="chat_titile">#ffffff</color>
+    <color name="chat_bottom">#d0d1d3</color>
+    <color name="chat_time_gray">#8f8f8f</color>
+    <color name="chat_view_color">#282828</color>
+    <color name="im_search_about">#333333</color>
+    <color name="msg_offline_tip_color">#eee777</color>
+    <color name="msg_offline_bg_color">#fff2d0</color>
+    <!-- 已完成作业列表 -->
+    <color name="h_line_bg">#aaaaaa</color>
+    <color name="list_seperator_bg">#dadada</color>
+
+    <!-- 做作业 -->
+    <color name="out_of_date_txt_bg">#999999</color>
+    <color name="homework_detail_line">#CFCFCF</color>
+    <color name="orange">#f99c0a</color>
+    <color name="red_bg">#F57250</color>
+    <color name="red_txt">#f1552c</color>
+    <color name="orange_light">#faa729</color>
+    <color name="head_btn_border">#1dab81</color>
+    <color name="undone_test">#F9AA33</color>
+    <color name="all_test">#8AC23B</color>
+    <color name="test_times">#1BC6DA</color>
+    <color name="wrong_answer">#F47250</color>
+    <color name="last_and_next_bg">#393939</color>
+    <color name="test_progress_bg">#282828</color>
+    <!-- 课程详情页 -->
+    <color name="half_trasparent_black">#bb000000</color>
+
+    <!-- 课程列表标签 -->
+    <color name="courselist_tab">#ff282828</color>
+    <color name="courselist_tab_on">#ff1e1e1e</color>
+    <color name="tab_text_color">#282828</color>
+    <color name="tab_on_text_color">#23bd8b</color>
+    <color name="tab_on_background_color">#1e1e1e</color>
+    <color name="bottom_background_color">#ffffff</color>
+    <color name="bottom_text_color">#888888</color>
+    <!-- 我的缴费 -->
+    <color name="payment_red">#EA4832</color>
+    <color name="payment_green">#8BC23B</color>
+    <color name="payment_blue">#00C0E9</color>
+    <color name="gray">#9d9d9d</color>
+    <color name="search_background_color">#17976d</color>
+
+    <!-- 课程类别 -->
+    <color name="industry_it">#00c0e9</color>
+    <color name="industry_gong">#00c0e9</color>
+    <color name="industry_shang">#f9aa33</color>
+    <color name="industry_jin">#f9aa33</color>
+    <color name="industry_wen">#f9aa33</color>
+    <color name="industry_yishu">#f9aa33</color>
+    <color name="industry_doctor">#ea4832</color>
+    <color name="industry_fa">#ea4832</color>
+    <color name="industry_jiao">#ea4832</color>
+    <color name="industry_zheng">#ea4832</color>
+    <color name="industry_xue">#8bc23b</color>
+    <color name="industry_other">#5665f2</color>
+
+
+    <!-- 行业背景色 -->
+    <color name="industry_it_bg">#00C0E9</color>
+    <color name="industry_shang_bg">#F9AA33</color>
+    <color name="industry_jin_bg">#F9AA33</color>
+    <color name="industry_yi_bg">#EA4832</color>
+    <color name="industry_study_bg">#8BC23B</color>
+    <color name="industry_other_bg">#5665F2</color>
+
+    <!-- 输入栏底部-表情 -->
+    <color name="face_bg">#eef1f4</color>
+
+    <!-- 操场   类型 -->
+    <color name="playground_comment_person_color">#1090e2</color>
+    <color name="announcement_tv_color">#ffffff</color>
+    <color name="announcement_view_color">#282828</color>
+    <color name="announcement_bg">#393939</color>
+    <color name="playground_search_hint_color">#cee8de</color>
+
+    <!-- 操场    长按列表弹窗 -->
+    <color name="playground_list_dialog_bg">#ffffff</color>
+    <color name="playground_list_title_bg">#23bd8b</color>
+    <color name="playground_list_content_bg">#333333</color>
+    <color name="playground_list_line_bg">#d1d1d1</color>
+
+    <!-- 操场   与我有关列表 -->
+    <color name="relateme_all_bg">#ffffff</color>
+    <color name="relateme_user_name_color">#333333</color>
+    <color name="relateme_time_color">#888888</color>
+    <color name="relateme_content_bg">#f5f5f5</color>
+    <color name="timeline_comment_usered_color">#1090e2</color>
+    <color name="timeline_give_flower_count_color">#ea4832</color>
+
+    <!-- 操场   搜索 -->
+    <color name="playgorund_search_tabtext_normalcolor">#333333</color>
+    <color name="playgorund_search_tabtext_selectcolor">#ff6000</color>
+
+    <!--登录  -->
+	<color name="login_user_name_pop_content_color">#444444</color> 
+	
+    <!-- 搜索背景色 -->
+    <color name="search_title_bg_green">#30c192</color>
+    <color name="search_btn_bg_green">#2fce9a</color>
+
+    <!-- 上拉加载更多 -->
+    <color name="transparent">#00000000</color>
+	<color name="search_line_bg">#e6e6e6</color>
+	<color name="search_user_age_color">#ff3b30</color>
+	<color name="search_user_age_bg">#ffe1dd</color>
+
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+
+    <!-- 操场  发动态 -->
+    <color name="item_image_bucket_path_name_color">#333333</color>
+    <color name="item_image_bucket_count_color">#888888</color>
+    <color name="item_image_bucket_line_color">#dbdbdb</color>
+	
+    <color name="line_bg">#dcdcdc</color>
+</resources>

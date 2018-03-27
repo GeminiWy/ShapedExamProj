@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent" android:id="@+id/course_rl">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="88dp"
+            android:layout_height="88dp" android:layout_marginLeft="14dp" android:layout_marginTop="10dp"
+            android:background="@drawable/header_1020" android:id="@+id/ll1" android:gravity="center">
+        <com.tming.openuniversity.view.CircularImage
+                android:id="@+id/course_my_photo_iv"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_above="@+id/my_name_tv"
+                android:layout_centerHorizontal="true" android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/ll2" android:layout_toRightOf="@+id/ll1"
+            android:layout_marginTop="20dp" android:layout_marginLeft="8dp" android:gravity="center">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="林燕"
+                android:id="@+id/course_username_tv" android:layout_alignTop="@+id/ll1"
+                android:layout_toRightOf="@+id/ll1" android:layout_marginTop="0dp" android:textSize="20dp"
+                android:layout_marginLeft="0dp" android:textColor="@color/course_student_text" android:singleLine="false"/>
+        <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:id="@+id/course_user_sex_img"
+                android:scaleType="matrix"
+                android:layout_toRightOf="@+id/course_username_tv" android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/course_username_tv" android:layout_marginBottom="3dp"
+                android:layout_marginTop="6dp"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="在修学分:" android:visibility="gone"
+            android:id="@+id/course_learning_text"
+            android:layout_marginTop="8dp" android:textSize="16dp" android:textColor="@color/course_student_text"
+            android:layout_below="@+id/ll2" android:layout_alignLeft="@+id/ll2" android:layout_alignBottom="@+id/ll1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0" android:visibility="gone"
+            android:id="@+id/course_learningcredit_tv" android:layout_alignTop="@+id/course_learning_text"
+            android:layout_toRightOf="@+id/course_learning_text" android:textSize="16dp" android:textColor="@color/course_student_text"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="已修学分:" android:visibility="gone"
+            android:id="@+id/course_learned_text"
+            android:layout_alignTop="@+id/course_learningcredit_tv" android:layout_toRightOf="@+id/course_learningcredit_tv"
+            android:textSize="16dp" android:layout_marginLeft="15dp" android:textColor="@color/course_student_text"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0" android:visibility="gone"
+            android:id="@+id/course_learnedcredit_tv" android:layout_alignTop="@+id/course_learned_text"
+            android:layout_toRightOf="@+id/course_learned_text" android:textSize="16dp"
+            android:textColor="@color/course_student_text"/>
+
+</RelativeLayout>

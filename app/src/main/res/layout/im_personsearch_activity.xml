@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_head_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/personsearch_search_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_64px"
+            android:layout_marginBottom="1dp"
+            android:layout_toLeftOf="@+id/personsearch_find_tv"
+            android:background="@color/white"
+            android:padding="10dp" android:layout_marginRight="5dp" android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/personsearch_search_iv"
+                android:layout_width="@dimen/_44px"
+                android:layout_height="@dimen/_44px"
+                android:layout_alignParentLeft="false"
+                android:visibility="visible" android:src="@drawable/user_search"
+                android:layout_alignTop="@+id/personsearch_search_et"
+                android:layout_alignParentBottom="false" android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false"/>
+            <EditText
+                android:id="@+id/personsearch_search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/personsearch_clean_iv"
+                android:layout_toRightOf="@+id/personsearch_search_iv"
+                android:background="@null"
+                android:hint="@string/im_search_hint"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_30px" android:layout_marginLeft="2dp"/>
+
+            <ImageView
+                android:id="@+id/personsearch_clean_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/msg_delete2_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <Button
+                android:id="@+id/personsearch_find_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_64px"
+                android:background="@drawable/null_foreground_button_pressed"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="@string/im_search_text"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" android:layout_alignParentRight="true" android:layout_marginTop="0dp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_alignLeft="@+id/personsearch_search_rl"
+                android:layout_below="@+id/personsearch_search_rl" android:layout_marginTop="12dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/im_search_users"
+                    android:id="@+id/im_search_about_tv" android:textSize="17dp" android:textColor="@color/im_search_about"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="( 0 )人"
+                    android:id="@+id/im_search_about_count_tv" android:textSize="17dp" android:textColor="@color/im_search_about"
+                    android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <com.tming.common.view.support.pulltorefresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/personsearch_result_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/personsearch_search_rl"
+            ptr:ptrMode="pullFromEnd" android:layout_marginTop="40dp"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/user_search_text"
+                android:id="@+id/user_search_words_tv" android:gravity="center" android:layout_below="@+id/personsearch_search_rl"
+                android:textColor="@color/chat_time_gray" android:background="@color/course_white"
+                android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view"
+        android:visibility="gone" />
+
+</RelativeLayout>

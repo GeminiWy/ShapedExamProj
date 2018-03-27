@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" > 
+    
+    <LinearLayout
+        android:id="@+id/login_view_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#efefef"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/login_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_bg_land" >
+              <include
+                android:id="@+id/loading_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                layout="@layout/loading_view"
+                android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/app_display_text"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_input_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="91dp"
+            android:layout_below="@id/login_bg"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="-45dp"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:id="@+id/login_input_username_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/username_ic"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/login_id" />
+
+                <ImageView
+                    android:id="@+id/username_spinner_ic"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/login_icon_select" />
+
+                <EditText
+                    android:id="@+id/login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_toLeftOf="@id/username_spinner_ic"
+                    android:layout_toRightOf="@id/username_ic"
+                    android:hint="@string/login_enter_username"  
+                    android:background="@null"
+                    android:singleLine="true" />
+            </RelativeLayout>
+            
+     		<!-- 分隔线 -->
+            <View
+                android:id="@+id/login_delive"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:background="#dbdbdb" />
+
+            <ImageView
+                android:id="@+id/pwd_ic"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/login_delive"
+                android:layout_margin="5dp"
+                android:src="@drawable/login_password" />
+
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/login_delive"
+                android:layout_marginLeft="40dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="@string/login_enter_password"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/login_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"  
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"
+            android:background="#23bd8b"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+         
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/findpwd_lay_verdelive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:text="|"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/findpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@id/findpwd_lay_verdelive"
+                android:text="找回密码"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tourist_inner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:clickable="true"
+                android:text="游客进入"
+                android:visibility="gone"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+        </RelativeLayout> 
+    </LinearLayout>
+</ScrollView>

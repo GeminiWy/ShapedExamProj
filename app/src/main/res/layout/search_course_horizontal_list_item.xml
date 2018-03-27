@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center"
+            >
+        <ImageView
+                android:layout_width="@dimen/_120px"
+                android:layout_height="@dimen/_70px"
+                android:id="@+id/course_imageview" android:layout_marginLeft="12dp" android:layout_marginTop="2dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100px"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:layout_weight="1.0" android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/course_introduce_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_by_course"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px"
+                android:singleLine="true"
+                android:ellipsize="middle"/>
+
+            <TextView
+                android:id="@+id/course_lecturer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_course_lecturer"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_21px" />
+
+            <TextView
+                android:id="@+id/course_credits_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_course_credits"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/_21px" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/item_image_bucket_line_color" android:layout_marginTop="5dp"/>
+</LinearLayout>

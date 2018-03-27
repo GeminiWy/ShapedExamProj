@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:padding="10dp">
+    <TextView
+            android:id="@+id/finished_homework_sumary_item_one_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已完成"
+            android:textSize="14dp"
+            android:textColor="#23BF8A"/>
+    <TextView
+            android:id="@+id/finished_homework_sumary_item_one_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="14dp"
+            android:textColor="#23BF8A"
+            android:layout_marginTop="2dp"/>
+</LinearLayout>

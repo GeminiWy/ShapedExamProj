@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mediacontroller_bg"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/videoviewzoombar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/videoviewzoombar_currenttime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_bar_total_time"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <SeekBar
+                android:id="@+id/videoviewzoombar_seek_sb"
+                style="@android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:max="1000"
+                android:maxHeight="10dp"
+                android:minHeight="10dp"
+                android:padding="0dp"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@drawable/thumb"
+                android:thumbOffset="0dp" />
+
+            <LinearLayout
+                android:id="@+id/videoviewzoombar_knowledges_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/videoviewzoombar_seek_sb"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/videoviewzoombar_totaltime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/video_bar_total_time"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/videoviewzoombar_downloadspeed_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="0kb/s"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoviewzoombar_layout" >
+
+        <Button
+            android:id="@+id/videoviewzoombar_sound_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/classroom_icon_kj_volume" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/videoviewzoombar_pre_btn"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/classroom_icon_kj_fastbackward" />
+
+            <ImageButton
+                android:id="@+id/videoviewzoombar_play_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:contentDescription="@string/mediacontroller_play_pause"
+                android:src="@drawable/mediacontroller_pause" />
+
+            <Button
+                android:id="@+id/videoviewzoombar_next_btn"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/classroom_icon_kj_fastforward" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/videoviewzoombar_menu_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:background="@drawable/classroom_icon_kj_open" />
+    </RelativeLayout>
+
+</RelativeLayout>

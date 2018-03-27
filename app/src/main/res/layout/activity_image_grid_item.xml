@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/activity_image_grid_preview_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_92px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/common_bg"
+        android:scaleType="centerCrop"
+        android:src="@null" />
+
+</RelativeLayout>

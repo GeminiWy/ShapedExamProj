@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_120px"  
+    android:orientation="vertical"> 
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_120px"     
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/white" >
+                
+	    <com.tming.openuniversity.view.CircularImage
+	        android:id="@+id/personsearch_userimage_iv"
+	        android:layout_centerVertical="true"
+	        android:layout_width="@dimen/_76px"
+	        android:layout_height="@dimen/_76px" android:onClick="jumpToSearchUserDetail"/>
+	    
+	    <TextView
+            android:id="@+id/personsearch_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/personsearch_userimage_iv"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_27px"
+            android:gravity="center"/>
+	    
+	    <Button
+            android:id="@+id/personsearch_add_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp" 
+            android:background="@drawable/null_foreground_button_pressed"
+            android:clickable="true"
+            android:onClick="addRelatedRequest"
+            android:layout_centerVertical="true"
+            android:text="添加"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

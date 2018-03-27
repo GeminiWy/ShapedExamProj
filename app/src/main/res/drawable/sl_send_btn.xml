@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/null_foreground_button_pressed" android:state_pressed="true"/>
+    <item android:drawable="@color/search_btn_bg_green"/>
+
+</selector>

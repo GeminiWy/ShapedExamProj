@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  android:background="@drawable/white_item_bg" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/personal_dynamics_header"
+        layout="@layout/common_header" />
+
+    <include
+        android:id="@+id/personal_dynamics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/refreshable_listview" />
+
+</LinearLayout>

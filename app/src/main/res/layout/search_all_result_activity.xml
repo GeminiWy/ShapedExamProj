@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg" 
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/transparent_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"></LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/search_all_pub_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/transparent_ll"
+        android:layout_marginLeft="@dimen/_18px"
+        android:layout_marginRight="@dimen/_18px"  >
+
+        <com.tming.common.view.RefreshableListView   
+            android:id="@+id/search_all_result_timeline_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/common_bg" 
+            android:divider="#00000000"
+            android:dividerHeight="8dp" />           
+    </LinearLayout>
+    <TextView
+        android:id="@+id/search_all_no_result_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40px"
+        android:gravity="center|left" 
+        android:layout_below="@+id/transparent_ll"
+        android:paddingLeft="@dimen/_18px"
+        android:background="@color/common_bg"
+        android:text="@string/search_no_date_result_tip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16px"
+        android:visibility="gone" />
+    
+    <!-- <include  layout="@layout/search_result_common_header"/>  -->
+    <LinearLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:gravity="center"             
+        android:background="@color/search_title_bg_green">
+        <com.tming.openuniversity.view.search.CustomAutoCompleteSearchView
+            android:id="@+id/search_all_auto_complete_ed"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+	   <!-- 
+	   <com.tming.openuniversity.view.search.CustomSearchView
+            android:id="@+id/search_all_auto_complete_ed"
+            android:layout_weight="1.0" 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" /> 
+         -->
+	</LinearLayout>
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_72px"
+        layout="@layout/loading_view"/>
+	<include
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        layout="@layout/error_view"
+        android:visibility="gone" />
+</RelativeLayout>

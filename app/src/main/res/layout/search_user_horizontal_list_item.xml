@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:clickable="true">
+    <view android:layout_width="@dimen/_81px"
+          android:layout_height="@dimen/_81px"
+          class="com.tming.openuniversity.util.CircleImageView" android:id="@+id/user_photo_iv"
+          android:layout_alignParentTop="false"
+          android:layout_alignParentLeft="true" android:layout_marginBottom="2dp" android:layout_marginLeft="15dp"
+          android:layout_marginTop="2dp"/>
+    <View
+            android:id="@+id/seperate_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/course_divider"
+            android:layout_marginTop="2dp" android:layout_below="@+id/userinfo_ll"
+            />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_92px" android:layout_toRightOf="@+id/user_photo_iv"
+            android:id="@+id/userinfo_ll" android:layout_marginTop="2dp">
+        <TextView
+                android:id="@+id/user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/user_photo_iv2"
+                android:text="user name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24px"
+                android:layout_alignTop="@+id/user_photo_iv2" android:layout_marginLeft="@dimen/_30px"
+                android:layout_marginTop="5dp"/>
+        <TextView
+                android:id="@+id/user_detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/user_photo_iv2"
+                android:text="user detail"
+                android:textColor="@color/bottom_text_color"
+                android:textSize="@dimen/_21px"
+                android:layout_marginLeft="@dimen/_30px" android:layout_below="@+id/user_name_tv"
+                android:layout_marginTop="2dp"/>
+    </LinearLayout>
+</RelativeLayout>

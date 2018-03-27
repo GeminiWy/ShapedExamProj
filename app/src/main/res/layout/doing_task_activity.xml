@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+            android:id="@+id/doing_homework_head_lay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            layout="@layout/common_head_layout_1" />
+    <FrameLayout
+            android:id="@+id/doing_homework_content_frame_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/doing_homework_head_lay"
+            android:layout_above="@+id/bottom_btn_layout"
+            android:visibility="gone"/>
+    <!-- 按钮层 -->
+
+    <RelativeLayout
+            android:id="@+id/bottom_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72px"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+        <!-- 开始答题 -->
+
+        <Button
+                android:id="@+id/task_negative_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/common_btn_selector"
+                android:text="@string/xk_reject_detail"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+        <LinearLayout
+                android:id="@+id/homework_detail_two_btn_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_bg" >
+
+            <Button
+                    android:id="@+id/save_task_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn_selector"
+                    android:text="@string/save"
+                    android:textColor="@color/white" />
+
+            <Button
+                    android:id="@+id/commit_task_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_btn_selector"
+                    android:text="@string/xk_commit"
+                    android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include
+            android:id="@+id/doing_homework_error_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/doing_homework_head_lay"
+            android:visibility="gone"
+            layout="@layout/error_view"/>
+    <include
+            android:id="@+id/doing_homework_loading_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/loading_view"/>
+</RelativeLayout>

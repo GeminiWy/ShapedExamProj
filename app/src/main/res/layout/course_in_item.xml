@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="77dp" android:id="@+id/course_count_view"
+                android:background="@drawable/common_btn_selector2">
+
+    <ImageView
+            android:layout_width="84dp"
+            android:layout_height="52dp"
+            android:id="@+id/course_face_iv" android:layout_marginTop="12dp" android:layout_marginLeft="11dp"
+            android:scaleType="fitXY"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="计算机组成原理"
+            android:id="@+id/course_name_tv"
+            android:layout_toRightOf="@+id/course_face_iv" android:layout_marginLeft="15px" android:singleLine="false"
+            android:textColor="@color/black" android:textSize="16dp"
+            android:textIsSelectable="false" android:clickable="false" android:layout_alignTop="@+id/course_face_iv"
+            android:layout_marginTop="-4dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="看到:"
+            android:id="@+id/course_to_tv"
+            android:layout_alignLeft="@+id/course_name_tv" android:textSize="14dp"
+            android:textColor="@color/course_detail_text"
+            android:layout_below="@+id/course_name_tv" android:layout_marginTop="1dp"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="21章811节"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:id="@+id/course_chapter_tv" android:layout_alignTop="@+id/course_to_tv"
+            android:layout_toRightOf="@+id/course_to_tv"
+            android:layout_toLeftOf="@+id/course_time_tv"
+            android:textSize="14dp"
+            android:textColor="@color/course_detail_text"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="23:55"
+            android:singleLine="true"
+            android:id="@+id/course_time_tv"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/course_chapter_tv" 
+            android:textSize="14dp" android:textColor="@color/course_detail_text" android:layout_marginLeft="5dp"/>
+    <View
+            android:layout_width="16dp"
+            android:layout_height="15dp"
+            android:background="#383838"
+            android:id="@+id/percent_bg" android:layout_alignRight="@+id/course_face_iv"
+            android:layout_alignBottom="@+id/course_face_iv" android:alpha="0.7"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="100%"
+            android:id="@+id/course_percent_tv"
+            android:layout_alignRight="@+id/course_face_iv" android:layout_alignEnd="@+id/course_face_iv"
+            android:textColor="@color/white" android:textSize="10dp"
+            android:layout_alignBottom="@+id/course_face_iv"
+            android:layout_marginRight="1dp" android:layout_marginBottom="1dp"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/border_color" android:layout_below="@+id/course_face_iv"
+            android:layout_marginTop="12dp" android:id="@+id/view"/>
+</RelativeLayout>

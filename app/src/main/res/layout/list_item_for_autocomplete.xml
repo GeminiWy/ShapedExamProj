@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+    <ImageView
+        android:id="@+id/simple_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search_record_clock_normal" />
+
+    <TextView
+        android:id="@+id/simple_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="5dip"
+        android:textColor="@android:color/black" />
+    <ImageView
+        android:id="@+id/simple_item_del_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search_clear" />  
+
+</LinearLayout>

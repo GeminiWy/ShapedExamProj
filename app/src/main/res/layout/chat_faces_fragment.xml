@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 聊天表情布局使用的gridview -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <GridView
+        android:id="@+id/tweet_pub_faces"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:verticalSpacing="2dp"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:background="@color/transparent"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:numColumns="7"
+        android:scrollingCache="false"
+        android:stretchMode="columnWidth" />
+</RelativeLayout>

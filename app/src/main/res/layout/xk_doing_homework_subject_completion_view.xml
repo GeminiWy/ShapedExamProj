@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tming.openuniversity.view.xkhomework.XKCompletionSubjectView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <com.tming.openuniversity.view.AutoImageLoadTextView
+                    android:id="@+id/doing_homework_subject_completion_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.下列选项中，（  ）属于企业在一定时期内为生成一定种类、一定数量的产品支持的各种费用总和"
+                    style="@style/doing_homework_content_text"/>
+            <EditText
+                    android:id="@+id/doing_homework_subject_completion_input_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/doing_homework_input_edit_text"/>
+        </LinearLayout>
+    </ScrollView>
+
+</com.tming.openuniversity.view.xkhomework.XKCompletionSubjectView>

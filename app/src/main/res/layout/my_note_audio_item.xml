@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 笔记的音频项 -->
+    <RelativeLayout 
+        android:id="@+id/my_note_audio_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90px"
+        android:background="@color/white">
+        <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/my_note_audio_img"
+	        android:layout_marginLeft="10dp">
+	        <ImageView 
+	            android:id="@+id/my_note_audio_left_img"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/my_note_tri"/>
+            
+	        <TextView 
+	            android:id="@+id/my_note_audio_time_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/black"
+	            android:layout_toRightOf="@+id/my_note_audio_left_img"
+	            android:textSize="16dp"
+	            android:layout_marginLeft="10dp"
+	            android:text=""/>
+	        <SeekBar 
+	            android:id="@+id/my_note_audio_progress"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/my_note_audio_time_tv"
+	            android:focusable="true"
+                android:max="1000"
+                android:maxHeight="10dp"
+                android:padding="0dp"
+                android:progressDrawable="@drawable/progressbar_bg"
+                android:thumb="@drawable/thumb"
+                android:thumbOffset="0dp"
+	            android:layout_alignLeft="@+id/my_note_audio_time_tv"/>
+	        <TextView 
+	            android:id="@+id/my_note_audio_video_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/light_black"
+	            android:layout_below="@+id/my_note_audio_progress"
+	            android:text=""/>
+	        <TextView 
+	            android:id="@+id/my_note_audio_time_tv2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/light_black"
+	            android:layout_toRightOf="@+id/my_note_audio_video_tv"
+	            android:layout_below="@+id/my_note_audio_progress"
+	            android:text=""/>
+        </RelativeLayout>
+        <ImageView 
+            android:id="@+id/my_note_audio_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/list_dot_selector"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

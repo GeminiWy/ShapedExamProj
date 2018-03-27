@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical"
+    tools:context=".PlaygroundRelatemeActivity" >
+
+    <!-- 头部 -->
+
+    <include
+        android:id="@+id/relateme_list_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_head_layout_1" />
+
+    <LinearLayout
+        android:id="@+id/relateme_list_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relateme_list_head"
+        android:layout_centerHorizontal="true"
+        android:background="@color/common_bg"
+        android:orientation="vertical" >
+
+        <!--
+             <com.miloisbadboy.view.PullToRefreshView
+            android:id="@+id/pullToRefreshView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+        <com.tming.common.view.RefreshableListView
+            android:id="@+id/playground_relateme_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/common_bg"
+            android:dividerHeight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp" />
+       </com.miloisbadboy.view.PullToRefreshView> -->
+
+        <!-- <com.tming.openuniversity.view.plaza.XScrollView
+            android:id="@+id/playground_relateme_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+        </com.tming.openuniversity.view.plaza.XScrollView> -->
+        
+       <com.tming.common.view.RefreshableListView
+        android:id="@+id/playground_relateme_scroll_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:listSelector="@drawable/chat_msg_list_selector" />
+        
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view" />
+	
+    <TextView 
+        android:id="@+id/no_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/light_black"
+        android:text="@string/no_relateme"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp" />
+	
+	
+</RelativeLayout>

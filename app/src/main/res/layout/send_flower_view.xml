@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 送花对话框 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <RelativeLayout 
+	        android:id="@+id/send_flower_head"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/_72px"
+	        android:background="@color/white">
+	        <TextView 
+	            android:id="@+id/send_flower_head_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/title_green"
+	            android:text="送花给  "
+	            android:textSize="18dp"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"/>
+	        <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="@color/title_green"
+	            android:layout_alignParentBottom="true"/>
+	    </RelativeLayout>
+	   	<RelativeLayout 
+	   	    android:id="@+id/send_flower_numpicker_lay"
+	   	    android:layout_below="@+id/send_flower_head"
+	   	    android:layout_marginTop="20dp"
+	        android:layout_marginBottom="20dp"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content">
+	   	    <com.tming.openuniversity.view.numberpicker.WheelView
+		        android:id="@+id/send_flower_numpicker"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" />
+	   	</RelativeLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/send_flower_ll"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/send_flower_numpicker_lay"
+	        android:orientation="horizontal">
+	        <Button 
+	            android:id="@+id/send_9_flower_btn"
+	            android:layout_width="match_parent"
+	            android:layout_height="36dp"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="5dp"
+	            android:text="9朵"
+	            android:background="@drawable/common_btn_selector2"/>
+	        <Button 
+	            android:id="@+id/send_99_flower_btn"
+	            android:layout_width="match_parent"
+	            android:layout_height="36dp"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="5dp"
+	            android:background="@drawable/common_btn_selector2"
+	            android:text="99朵"/>
+	        <Button 
+	            android:id="@+id/send_all_flower_btn"
+	            android:layout_width="match_parent"
+	            android:layout_height="36dp"
+	            android:layout_weight="1"
+	            android:layout_marginRight="5dp"
+	            android:text="全部"
+	            android:background="@drawable/common_btn_selector2"/>
+	    </LinearLayout>
+	    
+	    <TextView 
+	        android:id="@+id/send_flower_rest_tv"
+	        android:textColor="#888888"
+	        android:text=""
+	        android:textSize="18dp"
+	        android:layout_below="@+id/send_flower_ll"
+	        android:layout_marginBottom="20dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	    
+	    <LinearLayout android:id="@+id/send_flower_bottom_layout"
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:background="@color/white"
+			android:layout_below="@+id/send_flower_rest_tv"
+			android:layout_centerHorizontal="true"
+			android:gravity="center">
+	        
+			<Button	android:id="@+id/negative_button"				
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_weight="1"
+				android:textSize="16sp"
+				android:layout_marginRight="-1dp" 
+				android:textColor="@color/title_green"
+				android:background="@drawable/dialog_btn_selector"
+	            android:gravity="center" 
+	            android:text="@string/cancel"/>
+			
+			<Button	android:id="@+id/positive_button"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"				
+				android:layout_weight="1"
+				android:textSize="16sp" 
+				android:layout_marginLeft="-1dp"
+				android:textColor="@color/title_green"
+				android:background="@drawable/dialog_btn_selector"
+	            android:gravity="center" 
+	            android:text="@string/sure"
+	            />
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

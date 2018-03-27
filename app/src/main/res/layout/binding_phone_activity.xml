@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+    <include 
+        android:id="@+id/binding_phone_head"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_head_layout_1"/>
+	<TextView 
+	    android:id="@+id/binding_phone_top_tv"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/not_binding"
+	    android:textSize="12dp"
+	    android:textColor="@color/black"
+	    android:layout_below="@+id/binding_phone_head"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"/>
+	<!-- <TextView
+	    android:id="@+id/view"
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"
+	    android:visibility="gone"
+	    android:layout_below="@+id/binding_phone_top_tv"
+	    android:background="@color/transparent"/> -->
+	<EditText 
+	    android:id="@+id/binding_phone_et"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/_72px"
+	    android:layout_below="@+id/binding_phone_top_tv"
+	    android:paddingLeft="10dp"
+	    android:hint="@string/binding_et_hint1"
+	    android:background="@drawable/normal_et_bg"
+	    android:layout_marginLeft="20dp"
+	    android:inputType="number"
+	    android:layout_marginRight="20dp">
+	    </EditText>
+	<TextView 
+	    android:id="@+id/binding_phone_tv2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/sending_msg"
+	    android:textSize="12dp"
+	    android:layout_below="@+id/binding_phone_et"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"/>
+	
+	<Button 
+	    android:id="@+id/binding_phone_btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/_72px"
+	    android:layout_below="@+id/binding_phone_tv2"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="20dp"
+	    android:text="下一步"
+	    android:textColor="@color/white"
+	    android:background="@drawable/common_btn_selector"/>
+	 <TextView 
+	    android:id="@+id/binding_phone_bottom_tv"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/binding_to_find_code"
+	    android:textSize="12dp"
+	    android:visibility="gone"
+	    android:textColor="@color/black"
+	    android:layout_below="@+id/binding_phone_btn"
+	    android:layout_marginTop="15dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"/> 
+	<include 
+	    android:id="@+id/loading_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+	    layout="@layout/loading_view"/>
+</RelativeLayout>

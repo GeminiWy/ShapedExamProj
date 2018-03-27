@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_72px"
+    android:background="@color/title_green"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/commonheader_left_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/null_foreground_button_selector"
+        android:clickable="true"
+        android:paddingLeft="5dp"
+        android:src="@drawable/actionbar_icon_back" />
+
+    <TextView
+        android:id="@+id/commonheader_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/commonheader_left_iv"
+        android:layout_toLeftOf="@+id/commonheader_right_ll"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <LinearLayout 
+        android:id="@+id/commonheader_right_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:orientation="horizontal"
+	    >
+	    <Button
+	        
+	        android:id="@+id/commonheader_right_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="@dimen/_40px"
+	        android:background="@drawable/null_foreground_button_pressed"
+	        android:clickable="true"
+	        android:gravity="center"
+	        android:layout_marginRight="10dp"
+	        android:text="@string/finished"
+	        android:textColor="@android:color/white"
+	        android:textSize="14dp" />
+    
+	    <TextView
+	        android:visibility="gone"
+			android:id="@+id/commonheader_more_tv"
+	        android:layout_width="@dimen/_44px"
+	    	android:layout_height="@dimen/_40px"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/course_more_btn_selector"
+	        android:clickable="true"
+	        android:gravity="center"
+	        
+	        android:textColor="@android:color/white"
+	        android:textSize="14dp" />
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

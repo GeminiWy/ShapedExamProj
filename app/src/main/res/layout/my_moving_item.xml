@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="145dp" >
+
+    <RelativeLayout
+        android:id="@+id/mymoving_top_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.tming.openuniversity.view.CircularImage
+            android:id="@+id/mymoving_photo_iv"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@color/title_green" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/mymoving_photo_iv"
+            android:layout_toRightOf="@id/mymoving_photo_iv" >
+
+            <TextView
+                android:id="@+id/mymoving_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="韩三平" />
+
+            <Button
+                android:id="@+id/mymoving_age_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/mymoving_name_tv"
+                android:background="@color/blue"
+                android:text="男32"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/mymoving_name_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@id/mymoving_age_btn"
+                android:background="@color/title_green"
+                android:text="政"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    
+    <TextView
+        android:layout_below="@id/mymoving_top_rl"
+        android:layout_margin="5dp" 
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mymoving_content_tv"
+        android:text="我打算养点活的花，除了仙人掌有什么推荐吗？我打算养点活的花，除了仙人掌有什么推荐吗？我打算养点活的花，除了仙人掌有什么推荐吗？我打算养点活的花，除了仙人掌有什么推荐吗？我打算养点活的花，除了仙人掌有什么推荐吗？"
+        android:layout_width="fill_parent"
+        android:ellipsize="end"
+        android:lines="3"
+        android:layout_height="wrap_content"/>
+    
+    
+    <RelativeLayout
+        android:layout_below="@id/mymoving_content_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:id="@+id/mymoving_line1_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_seperator_bg" />
+
+        <TextView
+            android:id="@+id/mymoving_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mymoving_line1_view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="1小时前" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/mymoving_line2_view"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:background="@color/list_seperator_bg" />
+
+            <TextView
+                android:id="@+id/mymoving_email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="3" />
+
+            <View
+                android:id="@+id/mymoving_line2_view"
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:background="@color/list_seperator_bg" />
+
+            <TextView
+                android:id="@+id/mymoving_flower_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

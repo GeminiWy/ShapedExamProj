@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_item_bg"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/coachdisc_topic_RL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/coachdisc_topic_replynum_tv" >
+
+        <TextView
+            android:id="@+id/coachdisc_topic_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/coachdisc_topic_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/coachdisc_topic_title_tv"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/coachdisc_topic_author_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/coachdisc_topic_title_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/coachdisc_topic_time_tv"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/light_black"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/coachdisc_topic_replynum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/classroom_icon_discuss"
+        android:text=""
+        android:textColor="@color/light_black"
+        android:textSize="15dp" />
+
+</RelativeLayout>

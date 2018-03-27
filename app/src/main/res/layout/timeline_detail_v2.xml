@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tming.openuniversity.view.ResizeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                    android:id="@+id/timeline_item_lay"
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:background="@color/common_bg">
+    <include
+        android:id="@+id/timeline_detail_top"
+        layout="@layout/common_header" />
+    <com.tming.common.view.RefreshableListView 
+        android:id="@+id/comment_list_LV"
+        android:background="@drawable/timeline_detial_not_item_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_bottom_rl"
+        android:layout_below="@+id/timeline_detail_top"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+    </com.tming.common.view.RefreshableListView>
+    
+    <include 
+        android:id="@+id/chat_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/chat_bottom_bar"/>
+    
+</com.tming.openuniversity.view.ResizeRelativeLayout>

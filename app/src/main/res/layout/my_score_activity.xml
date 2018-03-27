@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+    <include 
+        android:id="@+id/myscore_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_head_layout_1"/>
+	<LinearLayout 
+	    android:id="@+id/myscore_title_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    
+	    android:layout_below="@+id/myscore_head_lay"
+	    android:orientation="horizontal">
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/light_black"
+		    android:textSize="12dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:layout_marginLeft="15dp"
+		    android:text="期末考试成绩"/>
+	    
+    </LinearLayout>
+    <!-- <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_item_bg"
+        android:layout_above="@+id/homework_score_btn"
+        android:layout_below="@+id/myscore_title_ll"
+        android:layout_marginBottom="10dp"> -->
+	    <ListView 
+	        android:id="@+id/myscore_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginBottom="10dp"
+	        android:layout_above="@+id/homework_score_btn"
+	        android:layout_below="@+id/myscore_title_ll"
+	        android:listSelector="@color/transparent"
+	        android:cacheColorHint="@color/transparent"
+	        />
+    <!-- </RelativeLayout> -->
+    <Button 
+        android:id="@+id/homework_score_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        android:layout_above="@+id/test_score_btn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/common_btn_selector"
+        android:layout_alignParentBottom="true"
+        android:text="作业成绩查询"/>
+    <Button 
+        android:id="@+id/test_score_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        android:background="@drawable/white_bg_green_border"
+        android:text="测试成绩查询"
+        android:textColor="@color/title_green"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+    <TextView 
+        android:id="@+id/no_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/light_black"
+        android:text="@string/no_score"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+    
+    <include 
+	    android:id="@+id/error_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/myscore_head_lay"
+        android:visibility="gone"
+	    layout="@layout/error_view"/>
+	<include 
+	    android:id="@+id/loading_layout"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+	    layout="@layout/loading_view"/>
+</RelativeLayout>

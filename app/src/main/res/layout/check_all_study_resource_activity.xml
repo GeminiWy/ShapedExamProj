@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_left_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/common_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/common_height"
+            android:clickable="true"
+            android:orientation="horizontal" >
+             <include android:id="@+id/course_lsit_actionbar"
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/_72px"
+		        layout="@layout/common_header"/> 
+        </LinearLayout>
+
+        <!-- 带圆角的边框   android:background="@drawable/search_content_shape"  -->
+        <RelativeLayout
+            android:id="@+id/courselist_search_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/courselist_searchicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/classroom_icon_search" />
+
+            <EditText
+                android:id="@+id/search_keyword"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/courselist_searchicon"
+                android:background="@null"
+                android:lines="1" />
+        </RelativeLayout>
+        <!-- 课程 -->
+
+        <LinearLayout
+            android:id="@+id/course_cate_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/allcourse_item"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="所有课程"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/list_arrowright1" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/border_color"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+  <!--          <RelativeLayout
+                android:id="@+id/nondegree_good_course_item"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:clickable="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="非学历精品课程"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/list_arrowright1" />
+            </RelativeLayout>
+-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@color/border_color"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="课程分类"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent">
+			    <com.tming.common.view.RefreshableListView 
+	                android:id="@+id/course_category_lv"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:divider="@color/border_color"
+	                android:dividerHeight="0.5dp"
+	                android:fadingEdge="none" />
+			    
+			    <TextView 
+			        android:id="@+id/no_data_tv"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textSize="20dp"
+			        android:textColor="@color/black"
+			        android:text=""
+			        android:layout_centerInParent="true"
+			        android:layout_marginTop="50dp" />
+			</RelativeLayout>             
+        </LinearLayout> 
+    </LinearLayout>
+	
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view_white"
+        android:visibility="invisible" />
+
+</RelativeLayout>

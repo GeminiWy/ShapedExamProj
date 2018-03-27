@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/common_head_layout_1"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView 
+	        android:id="@+id/no_data_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20dp"
+	        android:visibility="gone"
+	        android:textColor="@color/light_black"
+	        android:text="@string/no_finished_homework"
+	        android:layout_centerInParent="true"/>
+        <com.tming.common.view.RefreshableListView
+                android:id="@+id/finished_homework_detail_activity_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@color/transparent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="#DBDBDB"
+                android:dividerHeight="1px"/>
+        <include
+                android:id="@+id/finished_homework_detail_activity_error_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                layout="@layout/error_view"/>
+        <include
+                android:id="@+id/finished_homework_detail_activity_loading_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                layout="@layout/loading_view"/>
+    </RelativeLayout>
+
+</LinearLayout>

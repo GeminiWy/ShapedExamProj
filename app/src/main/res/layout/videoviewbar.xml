@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/mediacontroller_bg" >
+
+    <LinearLayout
+        android:id="@+id/videoviewbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/videoviewbar_play_imgbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:contentDescription="@string/mediacontroller_play_pause"
+            android:src="@drawable/mediacontroller_pause" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <SeekBar
+                android:id="@+id/videoviewbar_seek_sb"
+                style="@android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:max="1000"
+                android:maxHeight="10dp"
+                android:padding="0dp"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:thumb="@drawable/thumb"
+                android:thumbOffset="0dp" />
+
+            <LinearLayout
+                android:id="@+id/videoviewbar_knowledges_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/videoviewbar_seek_sb"
+                android:layout_marginTop="5dp"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/videoviewbar_zoom_imgbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:src="@drawable/classroom_icon_zoomin" />
+    </LinearLayout>
+
+<!--     <TextView
+        android:id="@+id/videoviewbar_showtime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/videoviewbar_layout"
+        android:layout_marginRight="10dp"
+        android:gravity="top"
+        android:text="00:00:00/00:00:00"
+        android:textColor="@color/white"
+        android:textSize="12sp" /> -->
+
+</RelativeLayout>

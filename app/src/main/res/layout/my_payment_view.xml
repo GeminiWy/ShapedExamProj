@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 我的缴费，页卡列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/refreshable_listview"/>
+	<RelativeLayout 
+	    android:id="@+id/mypayment_no_record_rl"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone"
+	    android:background="@color/common_bg">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/title_green"
+	        android:layout_centerInParent="true"
+	        android:textSize="20dp"
+	        android:text="您没有待缴费项目"/>
+	    
+	</RelativeLayout>
+</RelativeLayout>

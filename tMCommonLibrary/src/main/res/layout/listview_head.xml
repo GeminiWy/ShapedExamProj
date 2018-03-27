@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:gravity="bottom">
+
+	<!-- 内容 -->
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="50dp" 
+		android:gravity="center_vertical"
+		android:id="@+id/w_head_contentLayout"
+		android:paddingLeft="30dp">
+
+		<!-- 箭头图像、进度条 -->
+		<FrameLayout android:layout_width="wrap_content"
+			android:layout_height="match_parent" 
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true">
+
+			<!-- 箭头 -->
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_gravity="center"
+				android:src="@drawable/arrow_down" 
+				android:id="@+id/w_head_arrowImageView" />
+
+			<!-- 进度条 -->
+			<ProgressBar android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				style="?android:attr/progressBarStyleSmall"
+				android:layout_gravity="center" 
+				android:id="@+id/w_head_progressBar"
+				android:visibility="gone" />
+		</FrameLayout>
+
+		<!-- 提示、最近更新 -->
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_centerInParent="true"
+			android:orientation="vertical" 
+			android:gravity="center_horizontal">
+
+			<!-- 提示 -->
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:textColor="@color/black" 
+				android:textSize="16sp"
+				android:id="@+id/w_head_tipsTextView" />
+
+			<!-- 最近更新 -->
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:id="@+id/w_head_lastUpdatedTextView"
+				android:textColor="@color/black"
+				android:textSize="10sp" />
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

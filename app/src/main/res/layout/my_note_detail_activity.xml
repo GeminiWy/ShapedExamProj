@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+    <include 
+        android:id="@+id/mydetail_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_head_layout_1"/>
+    <RelativeLayout
+         android:id="@+id/notedetail_head_item"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/course_name_height"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_below="@+id/mydetail_head_lay"
+         android:background="@color/transparent" >
+
+         <TextView
+             android:id="@+id/notedetail_head_tv1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:textColor="@color/title_green"
+             android:textSize="16dp"
+             android:text="@string/course_link" />
+         <TextView
+             android:id="@+id/notedetail_head_title_tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:textColor="@color/black"
+             android:layout_toRightOf="@+id/notedetail_head_tv1"
+             android:layout_toLeftOf="@+id/list_arrowright"
+             android:textSize="16dp"
+             android:ellipsize="end"
+             android:singleLine="true"
+             android:text="" />
+         <ImageView
+             android:id="@+id/list_arrowright"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:paddingLeft="10dp"
+             android:src="@drawable/list_arrowright_selector" />
+         
+   	</RelativeLayout>
+   	
+	<!-- <ScrollView 
+	    android:id="@+id/notedetail_sv"
+	    android:layout_width="match_parent"
+	    android:layout_height="265dp"
+	    android:layout_below="@+id/notedetail_head_item">
+	     <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="265dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:orientation="vertical"
+	        android:gravity="fill_vertical"
+	        > -->
+             <TextView 
+	            android:id="@+id/notedetail_content_tv"
+	            android:layout_below="@+id/notedetail_head_item"
+	            android:layout_width="match_parent"
+	            android:layout_height="265dp"
+	            android:layout_marginLeft="10dp"
+	        	android:layout_marginRight="10dp"
+	            android:padding="10dp"
+	            android:textColor="@color/black"
+	            android:textSize="18dp"
+	            android:scrollbars="vertical"
+	            android:text=""
+	            android:background="@drawable/white_item_bg"/>
+	           
+            
+            
+	     <!-- </LinearLayout>
+	</ScrollView> -->
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:layout_below="@+id/notedetail_content_tv"
+	    android:orientation="horizontal">
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/light_black"
+		    android:textSize="12dp"
+		    android:text="@string/record_at"/>
+	    <TextView 
+	        android:id="@+id/notedetail_record_time_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/light_black"
+		    android:textSize="12dp"
+		    android:text=""/>
+	</LinearLayout>
+	<View 
+        android:id="@+id/h_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/h_line_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/notedetail_head_item"/>
+	
+	
+</RelativeLayout>

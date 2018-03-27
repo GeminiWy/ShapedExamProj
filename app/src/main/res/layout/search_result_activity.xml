@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+     
+   <!-- 顶部标题 ，背景设置为透明 -->
+    <include
+        android:id="@+id/search_result_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_72px"
+        layout="@layout/common_head_layout_search_result" />  
+        
+    <TextView 
+        android:id="@+id/search_type_introduce_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_34px"        
+        android:paddingLeft="@dimen/_18px"
+        android:text="@string/search_result_by_user"
+        android:textSize="@dimen/_16px"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:gravity="center|left"/>
+ 
+	<include 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/refreshable_listview"/>
+</LinearLayout>

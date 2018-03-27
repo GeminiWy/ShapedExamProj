@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 作业详情页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_bg" >
+
+    <include
+            android:id="@+id/homework_detail_head"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            layout="@layout/common_head_layout_1" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_btn_layout"
+            android:layout_below="@+id/homework_detail_head" >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+            <LinearLayout
+                    android:id="@+id/homework_detail_btns_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal" >
+
+                <!-- 全部题目 -->
+
+                <RelativeLayout
+                        android:id="@+id/homework_detail_all_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/all_test" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="全部"
+                            android:textColor="@color/white" />
+
+                    <TextView
+                            android:id="@+id/homework_detail_all_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="34dp" />
+                </RelativeLayout>
+                <!-- 未做题目 -->
+
+                <!--<RelativeLayout
+                        android:id="@+id/homework_detail_undone_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@color/undone_test" >
+
+                    <TextView
+                            android:id="@+id/homework_detail_undone_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="未做"
+                            android:textColor="@color/white" />
+
+                    <TextView
+                            android:id="@+id/homework_detail_undone_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="34dp" />
+                </RelativeLayout>-->
+                <!-- 答题次数 -->
+
+                <RelativeLayout
+                        android:id="@+id/homework_detail_times_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:background="@color/test_times" >
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="答题次数"
+                            android:textColor="@color/white" />
+
+                    <TextView
+                            android:id="@+id/homework_detail_times_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="0/0"
+                            android:textColor="@color/white"
+                            android:textSize="34dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/homework_detail_deadline_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homework_detail_btns_layout"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black" />
+                <!-- 截止时间 -->
+
+                <TextView
+                        android:id="@+id/deadline_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/black" />
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/homework_detail_deadline_layout"
+                    android:background="@color/homework_detail_line" />
+            <!-- 中间圆形得分布局 -->
+            <!-- 最高得分 -->
+            <RelativeLayout
+                    android:id="@+id/homework_score_highest_rl"
+                    android:layout_below="@+id/homework_detail_deadline_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/highest_score_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/highest_score"/>
+                <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp" >
+
+                    <!-- 圆形图片 -->
+                    <com.tming.openuniversity.view.CircularImage
+                            android:id="@+id/homework_score_highest_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    <!-- 自定义圆形进度条 -->
+                    <com.tming.openuniversity.view.RoundProgressBar
+                            android:id="@+id/homework_score_highest_rp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android_custom:roundColor="#D1D1D1"
+                            android_custom:roundProgressColor="@color/title_green"
+                            android_custom:roundWidth="1dip"
+                            android_custom:max="150"
+                            android_custom:textColor="#9A32CD"
+                            android_custom:textIsDisplayable="false"
+                            android_custom:textSize="18sp" />
+                    <TextView
+                            android:id="@+id/homework_score_highest_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="\?"
+                            android:textColor="@color/red_txt"
+                            android:textSize="22dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 本次得分 -->
+
+
+            <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/homework_score_highest_rl"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/homework_detail_line" />
+            <!-- 题型总览 -->
+
+            <TextView
+                    android:id="@+id/homework_detail_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/problem_types"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            <LinearLayout
+                    android:id="@+id/homework_detail_type_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/homework_detail_type_tv"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <!-- 按钮层 -->
+
+    <RelativeLayout
+            android:id="@+id/bottom_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_72px"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+        <!-- 开始答题 -->
+
+        <Button
+                android:id="@+id/start_test_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/common_btn_selector"
+                android:text="@string/xk_start_task"
+                android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <!-- <include
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homework_detail_head"
+        android:layout_centerInParent="true"
+        layout="@layout/error_view"
+        android:visibility="gone" /> -->
+
+    <include
+            android:id="@+id/loading_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/loading_view" />
+
+</RelativeLayout>

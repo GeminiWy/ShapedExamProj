@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_btn_selector2"
+    android:id="@+id/xk_task_list_item_rl" >
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/xk_task_list_item_name"
+            android:layout_toLeftOf="@+id/xk_task_list_item_finishtime"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:text="任务名"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xk_task_list_item_name"
+            android:layout_alignLeft="@+id/xk_task_list_item_name"
+            android:layout_alignRight="@+id/xk_task_list_item_finishtime"
+            android:text="权重：33% 答题次数：1/3"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:textColor="@color/light_black"
+            android:id="@+id/xk_task_list_item_info"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBaseline="@+id/xk_task_list_item_name"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:text="2014年09月01日 20:00"
+            android:textColor="@color/orange"
+            android:id="@+id/xk_task_list_item_finishtime"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/border_color"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/xk_task_list_item_info"
+            android:id="@+id/view"/>
+</RelativeLayout>

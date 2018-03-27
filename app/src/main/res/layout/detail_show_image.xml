@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 图片加载的样式 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+    <ImageView android:id="@+id/show_image_iv"
+        android:layout_width="match_parent" android:layout_height="150dp"
+        android:scaleType="centerCrop" android:clickable="true"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center" android:visibility="visible"/>
+	<com.tming.common.view.CircleProgress android:id="@+id/show_image_progressbar"
+	    android:layout_width="match_parent" android:layout_height="160dp"
+	    android:layout_gravity="center"/>
+</FrameLayout>

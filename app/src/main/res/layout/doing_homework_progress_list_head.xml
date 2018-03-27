@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/doing_homework_progress_list_head_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/doing_homework_content_text"
+            android:text="总计 40 题，已做 21 题，未做 19 题"/>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#CFCFCF"/>
+</LinearLayout>

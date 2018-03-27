@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通讯录——新的朋友-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+    <!-- 顶部标题 ，背景设置为透明 -->
+
+    <include
+            android:id="@+id/related_list_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/common_head_layout_1" />
+
+    <!-- 新的好友列表 -->
+
+    <com.tming.common.view.RefreshableListView
+            android:id="@+id/related_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" android:layout_below="@+id/related_list_head"/>
+
+    <TextView
+            android:id="@+id/no_data_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/light_black"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp" />
+
+    <include
+            android:id="@+id/loading_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_72px"
+            layout="@layout/loading_view" />
+</RelativeLayout>

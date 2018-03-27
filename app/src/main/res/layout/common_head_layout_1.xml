@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 通用返回头部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_height"
+        android:background="@color/title_green" >
+
+        <ImageView
+            android:id="@+id/commonheader_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/null_foreground_button_selector"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:src="@drawable/actionbar_icon_back" />
+
+        <TextView
+            android:id="@+id/commonheader_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/commonheader_center_tv"
+            android:layout_toRightOf="@id/commonheader_left_iv"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:textSize="18dp" />
+        <TextView
+                android:id="@+id/commonheader_center_tv"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                android:textSize="20dp" />
+        <Button
+            android:id="@+id/common_head_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_54px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_btn_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/finished"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minHeight="@dimen/teacher_course_listview_item_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+
+        <TextView
+            android:id="@+id/course_teach_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/course_teach_middle_tv"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="法律文书"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+                />
+
+        <TextView
+            android:id="@+id/course_teach_middle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/course_teach_count_tv"
+            android:gravity="center_vertical"
+            android:text="@string/teacher_students_label"
+            android:textColor="@color/light_black"
+            android:layout_marginRight="5dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/course_teach_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="594"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+</LinearLayout>

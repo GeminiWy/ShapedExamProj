@@ -1,0 +1,11 @@
+<resources>
+	<color name="transparent">#00000000</color>
+	<color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gold">#b89766</color>
+    <color name="light_dark">#DDDDDD</color>
+    <color name="orange">#FF6600</color>
+    <color name="pink">#FFCFB9</color>
+    <color name="red">#FF0000</color>
+    <color name="btn_pressed_gray">#F7F7F7</color>
+</resources>
